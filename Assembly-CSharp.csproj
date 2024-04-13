@@ -60,10 +60,13 @@
   <ItemGroup>
     <Compile Include="Assets\Enemy GhostCharacter_Free\Scripts\GhostScript.cs" />
     <Compile Include="Assets\Enemy2 Mini Simple Characters Skeleton Demo\Readme\Scripts\Readme.cs" />
+    <Compile Include="Assets\KidsCharacterFree\Scripts\KidsScript.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\KidsCharacterFree\Documents\readme_txt.txt" />
     <None Include="Assets\Enemy GhostCharacter_Free\Documents\readme_txt.txt" />
     <None Include="Assets\Level 1 Modular Castle\Castle_ReadMe.txt" />
+    <None Include="Assets\Wand Pack\Read Me.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

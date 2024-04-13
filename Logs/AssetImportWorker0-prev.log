@@ -15,7 +15,7 @@ C:/Users/yaman/OneDrive/Desktop/Game-Dev-Project/Game-Dev-Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53781
+54838
 Successfully changed project path to: C:/Users/yaman/OneDrive/Desktop/Game-Dev-Project/Game-Dev-Project
 C:/Users/yaman/OneDrive/Desktop/Game-Dev-Project/Game-Dev-Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/Users/yaman/OneDrive/Desktop/Game-Dev-Project/Game-Dev-Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [5948] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2726474650 [EditorId] 2726474650 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-RA349MR2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22320] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2510177969 [EditorId] 2510177969 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-RA349MR2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [5948] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2726474650 [EditorId] 2726474650 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-RA349MR2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22320] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2510177969 [EditorId] 2510177969 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-RA349MR2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 64.39 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 79.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.35f1 (157b46ce122a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.35f1/Editor/Data/Resources/UnitySubsystems
@@ -68,90 +68,90 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.35f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.35f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.35f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56668
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56060
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.35f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007890 seconds.
+Registered in 0.007568 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 109.17 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 72.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.823 seconds
+- Completed reload, in  0.722 seconds
 Domain Reload Profiling:
-	ReloadAssembly (824ms)
-		BeginReloadAssembly (154ms)
+	ReloadAssembly (723ms)
+		BeginReloadAssembly (116ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (542ms)
-			LoadAssemblies (151ms)
+		EndReloadAssembly (496ms)
+			LoadAssemblies (113ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (114ms)
+			SetupTypeCache (113ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (344ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (311ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (109ms)
+				RefreshPlugins (73ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (174ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
+				ProcessInitializeOnLoadAttributes (166ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005773 seconds.
+Registered in 0.006014 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.444 seconds
+- Completed reload, in  1.431 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1445ms)
-		BeginReloadAssembly (137ms)
+	ReloadAssembly (1432ms)
+		BeginReloadAssembly (139ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (1190ms)
-			LoadAssemblies (112ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1181ms)
+			LoadAssemblies (109ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (270ms)
+			SetupTypeCache (272ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (736ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (738ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (619ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (608ms)
 				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (46.9 KB). Loaded Objects now: 3529.
-Memory consumption went from 108.7 MB to 108.7 MB.
-Total: 3.486900 ms (FindLiveObjects: 0.392600 ms CreateObjectMapping: 0.257200 ms MarkObjects: 2.721400 ms  DeleteObjects: 0.114400 ms)
+Unloading 3069 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (46.4 KB). Loaded Objects now: 3532.
+Memory consumption went from 111.3 MB to 111.2 MB.
+Total: 4.610900 ms (FindLiveObjects: 0.499500 ms CreateObjectMapping: 0.282900 ms MarkObjects: 3.723700 ms  DeleteObjects: 0.102900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -168,148 +168,346 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 10926.251957 seconds.
-  path: Assets/Modular Castle/Assets/LevelOne.prefab
-  artifactKey: Guid(8b8d05eb0ccda2845a2ffb0957dca2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 14406.236621 seconds.
+  path: Assets/GhostCharacter_Free
+  artifactKey: Guid(5dbd84597ae8344c9bcd641e7cec5e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/LevelOne.prefab using Guid(8b8d05eb0ccda2845a2ffb0957dca2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dfcd833507bc7c0672bc09f99ee9cc6') in 0.255370 seconds 
-Number of asset objects unloaded after import = 2236
+Start importing Assets/GhostCharacter_Free using Guid(5dbd84597ae8344c9bcd641e7cec5e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95dfc6dc5bc0984f13015e7a2fb79eb5') in 0.013498 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 37.767996 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/barrel 1.prefab
-  artifactKey: Guid(5b10739b451ff7e4d8d43fe0b44921a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 6.133969 seconds.
+  path: Assets/Enemy GhostCharacter_Free
+  artifactKey: Guid(5dbd84597ae8344c9bcd641e7cec5e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/barrel 1.prefab using Guid(5b10739b451ff7e4d8d43fe0b44921a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dceb3755d30cbc35f34da1c8309d3dcd') in 0.027568 seconds 
-Number of asset objects unloaded after import = 24
+Start importing Assets/Enemy GhostCharacter_Free using Guid(5dbd84597ae8344c9bcd641e7cec5e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d9890e3ff9f42bab1716996bfdae2c4') in 0.008427 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006472 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.391 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1391ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1114ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (282ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (670ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (569ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3062 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (21.9 KB). Loaded Objects now: 3535.
+Memory consumption went from 110.8 MB to 110.8 MB.
+Total: 2.845300 ms (FindLiveObjects: 0.261000 ms CreateObjectMapping: 0.089600 ms MarkObjects: 2.464200 ms  DeleteObjects: 0.029200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/box3.prefab
-  artifactKey: Guid(13edd2ee365a97d4aa571acdb0a7d83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 6.725444 seconds.
+  path: Assets/Enemy GhostCharacter_Free/AnimationClips
+  artifactKey: Guid(1d280af23b966485fabbdfea3b330115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/box3.prefab using Guid(13edd2ee365a97d4aa571acdb0a7d83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bca1af5609b8dc5d68f5b43fca23b2e') in 0.022012 seconds 
-Number of asset objects unloaded after import = 20
+Start importing Assets/Enemy GhostCharacter_Free/AnimationClips using Guid(1d280af23b966485fabbdfea3b330115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9868ebed9d9ef6b52791c6fe5210daaa') in 0.014017 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/mannequin.prefab
-  artifactKey: Guid(4ac7440a8935c0c4294d324e56d64987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 2.656026 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Animators
+  artifactKey: Guid(e695c9ff4172d4980b69cc9a190ddd6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/mannequin.prefab using Guid(4ac7440a8935c0c4294d324e56d64987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e0d4f8eabad172b65eb74bdec6e1e2') in 0.026211 seconds 
-Number of asset objects unloaded after import = 15
+Start importing Assets/Enemy GhostCharacter_Free/Animators using Guid(e695c9ff4172d4980b69cc9a190ddd6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd31178ceef320415b32c358ff34e308') in 0.009295 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/mannequin 1.prefab
-  artifactKey: Guid(48c040965861d8c40befca832709a45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 4.172249 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Prefabs
+  artifactKey: Guid(4b6a0d72258224a0dac17e9c3b6269e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/mannequin 1.prefab using Guid(48c040965861d8c40befca832709a45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58538e5b7b4f5297e4322e62978b0e73') in 0.031086 seconds 
-Number of asset objects unloaded after import = 15
+Start importing Assets/Enemy GhostCharacter_Free/Prefabs using Guid(4b6a0d72258224a0dac17e9c3b6269e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c21da04a81be28a583a71df6d253f71') in 0.008245 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/candleholder2.prefab
-  artifactKey: Guid(c6fda97e2f85f854388b401808f813c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.018135 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Prefabs/Block.prefab
+  artifactKey: Guid(644f125c265a94be0896b72ec4c04e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/candleholder2.prefab using Guid(c6fda97e2f85f854388b401808f813c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '776e2751bcc80570a8cd080aa464c9d6') in 0.032658 seconds 
-Number of asset objects unloaded after import = 19
+Start importing Assets/Enemy GhostCharacter_Free/Prefabs/Block.prefab using Guid(644f125c265a94be0896b72ec4c04e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bde54c0ba2cbaaa952fc2cc0711bea6') in 0.116734 seconds 
+Number of asset objects unloaded after import = 17
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/stand for weapons.prefab
-  artifactKey: Guid(ed6edd50fd477cc43bef42558dcbed7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000036 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Prefabs/Ghost_animation.prefab
+  artifactKey: Guid(62d2a7f5da1084f6994dcbca19a2ddb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/stand for weapons.prefab using Guid(ed6edd50fd477cc43bef42558dcbed7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '017d64ce663e19b402685ba8703fec14') in 0.025239 seconds 
-Number of asset objects unloaded after import = 32
+Start importing Assets/Enemy GhostCharacter_Free/Prefabs/Ghost_animation.prefab using Guid(62d2a7f5da1084f6994dcbca19a2ddb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3d78d01b4d9a332f88b3e0f1ce225ce') in 0.129586 seconds 
+Number of asset objects unloaded after import = 102
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/candles 1.prefab
-  artifactKey: Guid(3033b6e2c5fe4a747a5918bfadbc019a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 16.664224 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Scenes
+  artifactKey: Guid(88ee970f24eb24815beb3808830582b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/candles 1.prefab using Guid(3033b6e2c5fe4a747a5918bfadbc019a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e16d0b049b81e62485978e4992263ef') in 0.029229 seconds 
-Number of asset objects unloaded after import = 82
+Start importing Assets/Enemy GhostCharacter_Free/Scenes using Guid(88ee970f24eb24815beb3808830582b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1cbab622c6fa522966606696288fca2') in 0.008299 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/candles.prefab
-  artifactKey: Guid(cfd933ac2c858574ba335dccf8a2f6c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 1.321149 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Scenes/DemoScene.unity
+  artifactKey: Guid(0c7e2bcbaf820497e88d5d7be74e88c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/candles.prefab using Guid(cfd933ac2c858574ba335dccf8a2f6c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a97f9f0fb9e5d3601998dde22dd71cd7') in 0.032516 seconds 
-Number of asset objects unloaded after import = 66
+Start importing Assets/Enemy GhostCharacter_Free/Scenes/DemoScene.unity using Guid(0c7e2bcbaf820497e88d5d7be74e88c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b8ec8f021a8762adc205640e1de97f9') in 0.008600 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005711 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.448 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1448ms)
+		BeginReloadAssembly (164ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1186ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (723ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (611ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3062 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (38.0 KB). Loaded Objects now: 3547.
+Memory consumption went from 127.8 MB to 127.7 MB.
+Total: 3.305900 ms (FindLiveObjects: 0.397700 ms CreateObjectMapping: 0.122800 ms MarkObjects: 2.644500 ms  DeleteObjects: 0.139100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/wall3 1.prefab
-  artifactKey: Guid(a989f3d54d02f934fba9ce9f04202bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 101.843339 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Materials
+  artifactKey: Guid(71e031b9f38ea45d383979ff0955c4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/wall3 1.prefab using Guid(a989f3d54d02f934fba9ce9f04202bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ecaefd72e36252e99d6fb9f2275f305') in 0.024885 seconds 
-Number of asset objects unloaded after import = 15
+Start importing Assets/Enemy GhostCharacter_Free/Materials using Guid(71e031b9f38ea45d383979ff0955c4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb34a28522d0d221171f6341696ec39') in 0.008823 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/box3 1.prefab
-  artifactKey: Guid(0d4775583aca9894e9208bc487190db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.027611 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Materials/MaterialBlock.mat
+  artifactKey: Guid(1a81d04651d154b569e181ca417e5d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/box3 1.prefab using Guid(0d4775583aca9894e9208bc487190db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6ddc9edf4115f9092aec56de69f43a') in 0.024045 seconds 
-Number of asset objects unloaded after import = 20
+Start importing Assets/Enemy GhostCharacter_Free/Materials/MaterialBlock.mat using Guid(1a81d04651d154b569e181ca417e5d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abbfef206c3ae388e16533ada0ce01a7') in 0.074833 seconds 
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/decoration2.prefab
-  artifactKey: Guid(0c5f6d8c494dfe849ae0d9fa17abad8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 5.787465 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Materials/ShaderBlock.shadergraph
+  artifactKey: Guid(f4e17be1ee0ff49138214f104cc0a3fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/decoration2.prefab using Guid(0c5f6d8c494dfe849ae0d9fa17abad8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7d3281e450da401645b6951a0b0d0d9') in 0.022312 seconds 
-Number of asset objects unloaded after import = 15
+Start importing Assets/Enemy GhostCharacter_Free/Materials/ShaderBlock.shadergraph using Guid(f4e17be1ee0ff49138214f104cc0a3fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e76477745ccfcf94fd43e8ad81f5492c') in 0.010736 seconds 
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/candle1.prefab
-  artifactKey: Guid(77199120630e1734e8e77e3c2f9cf50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 1.045428 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Materials/ShaderGhost.shadergraph
+  artifactKey: Guid(b38791ef0291248349d2d026354b1319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/candle1.prefab using Guid(77199120630e1734e8e77e3c2f9cf50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1b1703cc923639056fd34b7912b2e1') in 0.028457 seconds 
-Number of asset objects unloaded after import = 19
+Start importing Assets/Enemy GhostCharacter_Free/Materials/ShaderGhost.shadergraph using Guid(b38791ef0291248349d2d026354b1319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f861ec7ea445e93be176f108e9c806') in 0.010445 seconds 
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/decoration3.prefab
-  artifactKey: Guid(31ba195dc0487cd458132f3c4f8e9e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 1.537138 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Fbx
+  artifactKey: Guid(a365a9204071c405c8b65eaddbce2567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/decoration3.prefab using Guid(31ba195dc0487cd458132f3c4f8e9e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '676f6846284713e585eb7aa04fbf2fce') in 0.022773 seconds 
-Number of asset objects unloaded after import = 15
+Start importing Assets/Enemy GhostCharacter_Free/Fbx using Guid(a365a9204071c405c8b65eaddbce2567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7db7eeee1561c4537f2576e365d30fb6') in 0.008184 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/wall2 1.prefab
-  artifactKey: Guid(b84cdff1414a1094d995361dae7b91b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.042226 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Fbx/Block.fbx
+  artifactKey: Guid(e30db1c1f4eca42539a70cc31514d62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/wall2 1.prefab using Guid(b84cdff1414a1094d995361dae7b91b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb5f2813740d92db62787979956c23ec') in 0.028101 seconds 
-Number of asset objects unloaded after import = 37
+Start importing Assets/Enemy GhostCharacter_Free/Fbx/Block.fbx using Guid(e30db1c1f4eca42539a70cc31514d62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50d0f39ee839a75c9df458d40712053') in 0.053516 seconds 
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Fbx/Ghost_animation.fbx
+  artifactKey: Guid(8242d247159ec462794ba075ca8c938e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Enemy GhostCharacter_Free/Fbx/Ghost_animation.fbx using Guid(8242d247159ec462794ba075ca8c938e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad917cb3132f89caca2564c981616e8') in 0.036380 seconds 
+Number of asset objects unloaded after import = 59
+========================================================================
+Received Import Request.
+  Time since last request: 6.100302 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Scripts
+  artifactKey: Guid(9979cb5b0069d43c08515df44fac8b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Enemy GhostCharacter_Free/Scripts using Guid(9979cb5b0069d43c08515df44fac8b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b90c02c6271d5eafa59cf66e16df4bc') in 0.008879 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.683858 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Textures
+  artifactKey: Guid(4bc8150bfb4cc4bd08db5ed2f60f6bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Enemy GhostCharacter_Free/Textures using Guid(4bc8150bfb4cc4bd08db5ed2f60f6bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f819710190bb66654d8a0080f3549819') in 0.009321 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.046708 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Textures/texture_BlockGrass.png
+  artifactKey: Guid(cd16209d7d0a14feba93761ad9d6164d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Enemy GhostCharacter_Free/Textures/texture_BlockGrass.png using Guid(cd16209d7d0a14feba93761ad9d6164d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6148d6b997f24827112216d33edd625') in 0.036781 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Enemy GhostCharacter_Free/Textures/texture_ghost_occlusion.png
+  artifactKey: Guid(e9d3080cdb4254410a1bf4c0f2e1523f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Enemy GhostCharacter_Free/Textures/texture_ghost_occlusion.png using Guid(e9d3080cdb4254410a1bf4c0f2e1523f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47943b746c5d634f9e5660f5307f5bed') in 0.021645 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 16.950151 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(a9fa6bd81e847e34f867738864ba6181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scenes using Guid(a9fa6bd81e847e34f867738864ba6181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe076087407eed5bedd7aa1f4f7c386') in 0.003115 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 22.784143 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Materials/Arch 001/Arch Secondary Stone.mat
+  artifactKey: Guid(c4429e716a8e5ff458ed317643ba7799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Materials/Arch 001/Arch Secondary Stone.mat using Guid(c4429e716a8e5ff458ed317643ba7799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45420654307b04b79700398edf2ae3e1') in 0.029830 seconds 
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
   Time since last request: 0.000026 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/stand for weapons.001.prefab
-  artifactKey: Guid(107ca562f4dfa2942a6692ccdefd9a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Materials/Bookshelf 001/Binding 001.mat
+  artifactKey: Guid(efd0e3d6d7a2d9642b0fbaa307cca3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/stand for weapons.001.prefab using Guid(107ca562f4dfa2942a6692ccdefd9a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051a4115767fb2a13f95c52a228acd7d') in 0.027440 seconds 
-Number of asset objects unloaded after import = 44
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Materials/Bookshelf 001/Binding 001.mat using Guid(efd0e3d6d7a2d9642b0fbaa307cca3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0374cc9176fafe7abd4f0f5445ea7fc4') in 0.032538 seconds 
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/candle3.prefab
-  artifactKey: Guid(488fb4bf55e88e243a3d0bfaa7e42703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000031 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Materials/Barrel 001/Barrel Metal.mat
+  artifactKey: Guid(f484b6ff3d890664095a3ea9dc3bf8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/candle3.prefab using Guid(488fb4bf55e88e243a3d0bfaa7e42703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c46620551a48903248a5dd2793e0d36') in 0.031713 seconds 
-Number of asset objects unloaded after import = 27
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Materials/Barrel 001/Barrel Metal.mat using Guid(f484b6ff3d890664095a3ea9dc3bf8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062a26f40b75bdbd160e7756ecdc0e87') in 0.029905 seconds 
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Modular Castle/Assets/prefabs2/torch.prefab
-  artifactKey: Guid(2b28d52e9282f5844af4fa29dc0c1032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000035 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Materials/Bookshelf 001/Binding 008.mat
+  artifactKey: Guid(f19fd94361e2a6442b52e1b7988e56ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Modular Castle/Assets/prefabs2/torch.prefab using Guid(2b28d52e9282f5844af4fa29dc0c1032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f364f282352e0fa1e6a1bf3c54582f') in 0.026147 seconds 
-Number of asset objects unloaded after import = 19
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Materials/Bookshelf 001/Binding 008.mat using Guid(f19fd94361e2a6442b52e1b7988e56ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460b7fd0b105197d1c826cd119e4758e') in 0.024784 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Materials/Bookshelf 001/Binding 007.mat
+  artifactKey: Guid(32d3c3968e9eb03428e9ba178284a9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Materials/Bookshelf 001/Binding 007.mat using Guid(32d3c3968e9eb03428e9ba178284a9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6042ca810fdd91bec5d0720fccc61e83') in 0.032238 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Materials/Bookshelf 001/Binding 005.mat
+  artifactKey: Guid(eaf9da3e10f408942a32980a56f122f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Materials/Bookshelf 001/Binding 005.mat using Guid(eaf9da3e10f408942a32980a56f122f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd29f3041d8ade5f3471cb1d3d4c19a07') in 0.018373 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Materials/Bookshelf 001/Binding 004.mat
+  artifactKey: Guid(3f47d85ab1cba404c9f4b18f90925a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Materials/Bookshelf 001/Binding 004.mat using Guid(3f47d85ab1cba404c9f4b18f90925a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e9d2f7851c307b57b4a0da6f25178a5') in 0.020521 seconds 
+Number of asset objects unloaded after import = 6
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
