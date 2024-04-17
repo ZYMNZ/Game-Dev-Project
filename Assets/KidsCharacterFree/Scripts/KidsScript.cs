@@ -146,6 +146,7 @@ public class KidsScript : MonoBehaviour
         _MoveDirection.y = -0.1f;
       }
     }
+    Debug.Log(_MoveDirection.y);
     _MoveDirection.y -= 0.1f;
     _Ctrl.Move(_MoveDirection * Time.deltaTime);
   }
