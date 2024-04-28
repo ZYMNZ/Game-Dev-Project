@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16145 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16108 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.24f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/Hibba Qaraman/OneDrive/Desktop/Game-Dev-Project
+C:/Users/logan/Unity/Projects/Game-Dev-Project
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55310
-Successfully changed project path to: C:/Users/Hibba Qaraman/OneDrive/Desktop/Game-Dev-Project
-C:/Users/Hibba Qaraman/OneDrive/Desktop/Game-Dev-Project
+49457
+Successfully changed project path to: C:/Users/logan/Unity/Projects/Game-Dev-Project
+C:/Users/logan/Unity/Projects/Game-Dev-Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,109 +47,107 @@ C:/Users/Hibba Qaraman/OneDrive/Desktop/Game-Dev-Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Unable to join player connection multicast group (err: 10013).
-Player connection [43816] Host "[IP] 192.168.158.1 [Port] 0 [Flags] 2 [Guid] 423811352 [EditorId] 423811352 [Version] 1048832 [Id] WindowsEditor(7,HIBBA-22PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23712] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1374008092 [EditorId] 1374008092 [Version] 1048832 [Id] WindowsEditor(7,LoganPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Refreshing native plugins compatible for Editor in 207.58 ms, found 4 plugins.
+Player connection [23712] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1374008092 [EditorId] 1374008092 [Version] 1048832 [Id] WindowsEditor(7,LoganPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 53.55 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Hibba Qaraman/OneDrive/Desktop/Game-Dev-Project/Assets
+[Subsystems] Discovering subsystems at path C:/Users/logan/Unity/Projects/Game-Dev-Project/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
-    Vendor:   Intel
-    VRAM:     8072 MB
-    Driver:   30.0.101.1191
+    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x249d)
+    Vendor:   NVIDIA
+    VRAM:     8020 MB
+    Driver:   31.0.15.5222
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56844
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.023331 seconds.
+Registered in 0.002236 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 156.76 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 55.88 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.403 seconds
+- Completed reload, in  0.420 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1405ms)
-		BeginReloadAssembly (196ms)
+	ReloadAssembly (420ms)
+		BeginReloadAssembly (53ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (954ms)
-			LoadAssemblies (195ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (307ms)
+			LoadAssemblies (52ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (259ms)
+			SetupTypeCache (67ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (542ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (188ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (157ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (285ms)
-				ProcessInitializeOnLoadMethodAttributes (79ms)
+				RefreshPlugins (56ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (94ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.018081 seconds.
+Registered in 0.002489 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.42 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.408 seconds
+- Completed reload, in  0.715 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2410ms)
-		BeginReloadAssembly (375ms)
+	ReloadAssembly (716ms)
+		BeginReloadAssembly (81ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (21ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (60ms)
-		EndReloadAssembly (1688ms)
-			LoadAssemblies (275ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (568ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (645ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (84ms)
-			SetupLoadedEditorAssemblies (696ms)
+			SetupTypeCache (168ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (285ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (152ms)
-				ProcessInitializeOnLoadAttributes (484ms)
-				ProcessInitializeOnLoadMethodAttributes (36ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3293 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 26 unused Assets / (56.5 KB). Loaded Objects now: 3751.
-Memory consumption went from 117.8 MB to 117.7 MB.
-Total: 6.117500 ms (FindLiveObjects: 0.257500 ms CreateObjectMapping: 0.118800 ms MarkObjects: 5.634200 ms  DeleteObjects: 0.105300 ms)
+Unloading 3465 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (129.0 KB). Loaded Objects now: 3925.
+Memory consumption went from 126.3 MB to 126.2 MB.
+Total: 2.396800 ms (FindLiveObjects: 0.161400 ms CreateObjectMapping: 0.072400 ms MarkObjects: 2.101100 ms  DeleteObjects: 0.061100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,229 +162,204 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1250054.694973 seconds.
-  path: Assets/CapCartola.fbx
-  artifactKey: Guid(6a01f05c6c8df9a4fb58565dc272033f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CapCartola.fbx using Guid(6a01f05c6c8df9a4fb58565dc272033f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac3d3c5e5d459ca4c18660959a687595') in 0.484795 seconds 
+  Time since last request: 78036.808404 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_Albedo.png
+  artifactKey: Guid(9b493b30cc2b68843a49d3845c4d2857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_Albedo.png using Guid(9b493b30cc2b68843a49d3845c4d2857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a7866d31520d1ef495f102e3c90f7f8') in 0.183986 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 136.704112 seconds.
-  path: Assets/Hibba/Boy0_W_Hat.prefab
-  artifactKey: Guid(e8f958f77a0595243a2c4d18ec46a974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hibba/Boy0_W_Hat.prefab using Guid(e8f958f77a0595243a2c4d18ec46a974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a34f65330a624e957a2fe9c6af6fc9f2') in 0.081680 seconds 
+  Time since last request: 0.000027 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_Height.png
+  artifactKey: Guid(7eec2347c647885419631df1e5ce0a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_Height.png using Guid(7eec2347c647885419631df1e5ce0a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78a81197ae2c859bb199c11d1e73a991') in 0.025200 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000036 seconds.
-  path: Assets/Hibba/HatColor.mat
-  artifactKey: Guid(bf99ce352667e3f438614aa579541d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hibba/HatColor.mat using Guid(bf99ce352667e3f438614aa579541d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fa4588d037c3bc9ad2cb1300db45ad9') in 0.016067 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010797 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 4.01 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.268 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2269ms)
-		BeginReloadAssembly (271ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (1819ms)
-			LoadAssemblies (227ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (492ms)
-			ReleaseScriptCaches (7ms)
-			RebuildScriptCaches (165ms)
-			SetupLoadedEditorAssemblies (788ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (39ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (4ms)
-				BeforeProcessingInitializeOnLoad (218ms)
-				ProcessInitializeOnLoadAttributes (468ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 8.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3286 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (24.6 KB). Loaded Objects now: 3799.
-Memory consumption went from 134.5 MB to 134.5 MB.
-Total: 3.317600 ms (FindLiveObjects: 0.305400 ms CreateObjectMapping: 0.135700 ms MarkObjects: 2.790500 ms  DeleteObjects: 0.082400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_AmbientOcclusion.png
+  artifactKey: Guid(d86ac45e773b5994a9fd6fe73ba59500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_AmbientOcclusion.png using Guid(d86ac45e773b5994a9fd6fe73ba59500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf09dcf525cf7e6628a52617eff5f98') in 0.014088 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 283.858397 seconds.
-  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine_Light.psd
-  artifactKey: Guid(18775b51e3bd42299fd30bd036ea982f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine_Light.psd using Guid(18775b51e3bd42299fd30bd036ea982f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c3d1f472d7c2a6cb7ec5326cc1549bc') in 0.145805 seconds 
+  Time since last request: 0.000015 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_Albedo.png
+  artifactKey: Guid(9c70ebc7c984ba746abc1a238f3f5f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_Albedo.png using Guid(9c70ebc7c984ba746abc1a238f3f5f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef18650e1536dada7002db4708b4d745') in 0.017704 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenter_Light.psd
-  artifactKey: Guid(6ace62d30f494c948b71d5594afce11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenter_Light.psd using Guid(6ace62d30f494c948b71d5594afce11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc5ecc9d29266564a99b07f515283586') in 0.016382 seconds 
+  Time since last request: 0.000016 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_BaseMap.png
+  artifactKey: Guid(c24dfec81f3d7ab4fb836f21ba1f8a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_BaseMap.png using Guid(c24dfec81f3d7ab4fb836f21ba1f8a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3540cab725f027ed2bf21e9a7ef9ea83') in 0.017831 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCapLine_Light.psd
-  artifactKey: Guid(49679f302ac6408697f6b9314a38985c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCapLine_Light.psd using Guid(49679f302ac6408697f6b9314a38985c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09135af1c95f92b4c838304c279e17a') in 0.015045 seconds 
+  Time since last request: 0.000015 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_Normal.png
+  artifactKey: Guid(df25a326a5387fe499a97d626dae219f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_Normal.png using Guid(df25a326a5387fe499a97d626dae219f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3ebe146febec9ef01eef11c5221919') in 0.045815 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.108584 seconds.
-  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignFlush_Light.psd
-  artifactKey: Guid(64b9fad609434c489c32b1cdf2004a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignFlush_Light.psd using Guid(64b9fad609434c489c32b1cdf2004a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22dfccc50d4182f216bb442cdaf462f0') in 0.016037 seconds 
+  Time since last request: 0.000015 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_MaskMap.png
+  artifactKey: Guid(c709ce25949e52843bcdc811aac0cc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_MaskMap.png using Guid(c709ce25949e52843bcdc811aac0cc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671847698525e7aec9966bac74a966ab') in 0.019637 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.010556 seconds.
-  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignJustified_Light.psd
-  artifactKey: Guid(fa6bd40a216346b783a4cce741d277a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignJustified_Light.psd using Guid(fa6bd40a216346b783a4cce741d277a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865843375e48479f77bb88d5de3d3565') in 0.014960 seconds 
+  Time since last request: 0.000014 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_Height.png
+  artifactKey: Guid(a37e1fb1da472d0439c769f4c29c2619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_Height.png using Guid(a37e1fb1da472d0439c769f4c29c2619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '490c0df2c079ff42c6d933433cf1ef41') in 0.017528 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.325264 seconds.
-  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMiddle.psd
-  artifactKey: Guid(41b96614b2e6494ba995ddcd252d11ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMiddle.psd using Guid(41b96614b2e6494ba995ddcd252d11ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996cc0b9d3610543eed7b109fc892b9c') in 0.014062 seconds 
+  Time since last request: 0.000027 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_Height.png
+  artifactKey: Guid(b6b6510993795c04baf50d260ef63823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_Height.png using Guid(b6b6510993795c04baf50d260ef63823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47635a7c6e52dc07f0cd039d7f69d5eb') in 0.021517 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.068504 seconds.
-  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignRight.psd
-  artifactKey: Guid(342a0f8aca7f4f0691338912faec0494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignRight.psd using Guid(342a0f8aca7f4f0691338912faec0494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9864ddc65e7f0637444675abb6596f85') in 0.016552 seconds 
+  Time since last request: 0.000019 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_Normal.png
+  artifactKey: Guid(3c640d46683672f409a5c2ab049799f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_Normal.png using Guid(3c640d46683672f409a5c2ab049799f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d8f0f7b22c1df23bd50f1163cd7129') in 0.018926 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.680468 seconds.
-  path: Assets/Level 1 Modular Castle/Assets/textures/castle.png
-  artifactKey: Guid(c1fd7ade2bee9c94d8d41c6a0107d84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level 1 Modular Castle/Assets/textures/castle.png using Guid(c1fd7ade2bee9c94d8d41c6a0107d84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1046201c1bb1cdcf754c3c7f6745670') in 0.024961 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.008129 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_buttonssosigninemail.png
-  artifactKey: Guid(3086d66a563317b40a20a20da2c64ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_buttonssosigninemail.png using Guid(3086d66a563317b40a20a20da2c64ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '193d0301f442809036e4b91a0d46dc9e') in 0.015879 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Packages/com.unity.testtools.codecoverage/Editor/Icons/d_CodeCoverage@2x.png
-  artifactKey: Guid(8616c9d86a8504a4b8b5c65bb6a5644f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.testtools.codecoverage/Editor/Icons/d_CodeCoverage@2x.png using Guid(8616c9d86a8504a4b8b5c65bb6a5644f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba39062f68309eab5a600b6bcf984d5') in 0.016212 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconaddedoverlay@2x.png
-  artifactKey: Guid(a6fbd5a181bc51e42a61a73fe8d727c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconaddedoverlay@2x.png using Guid(a6fbd5a181bc51e42a61a73fe8d727c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58a6814849af9ff0d29436ad0ba15446') in 0.018592 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconbranch@2x.png
-  artifactKey: Guid(874d8401331ede14087e8d8d486ddda6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconbranch@2x.png using Guid(874d8401331ede14087e8d8d486ddda6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f241297eaa8646b5b4d42c5fddeca73d') in 0.017058 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_icondeletedlocaloverlay@2x.png
-  artifactKey: Guid(92b204cca46037444ab18ba6701f86f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_icondeletedlocaloverlay@2x.png using Guid(92b204cca46037444ab18ba6701f86f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fdaf34887907917a28a7b4eaf56924c') in 0.017253 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_icondeletedremoteoverlay.png
-  artifactKey: Guid(3de8a0634e55df8499c88204001cb0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_icondeletedremoteoverlay.png using Guid(3de8a0634e55df8499c88204001cb0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e2e449c15a8ec05fc9c3ef1d2afccb7') in 0.020402 seconds 
+  Time since last request: 0.000020 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_AmbientOcclusion.png
+  artifactKey: Guid(42a0e8b7e44c0fe4e9ab6ecfc5485c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_AmbientOcclusion.png using Guid(42a0e8b7e44c0fe4e9ab6ecfc5485c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c98621aa3742279f87b5919fb86f38b') in 0.017907 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000048 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconinviteusers.png
-  artifactKey: Guid(3094096a150921c409ef35579f2ada0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconinviteusers.png using Guid(3094096a150921c409ef35579f2ada0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ebf19c4d48ad7484190ce751600332') in 0.049918 seconds 
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_Metallic.png
+  artifactKey: Guid(9f494f6f5433f1342a884cb0be7f2164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_Metallic.png using Guid(9f494f6f5433f1342a884cb0be7f2164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef8b97b959284ad9aa94d0d6b32cb9d') in 0.009375 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconoutofsync@2x.png
-  artifactKey: Guid(f82dfc5fc3c5a8f4080a3550427019c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconoutofsync@2x.png using Guid(f82dfc5fc3c5a8f4080a3550427019c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84994d291a7cf8cca5dd1ce95444f32c') in 0.017031 seconds 
+  Time since last request: 0.000017 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_BaseMap.png
+  artifactKey: Guid(fc8e89398d6c69f40b34c7a3d476c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_BaseMap.png using Guid(fc8e89398d6c69f40b34c7a3d476c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f940859d71d0157ed80bc79c5fca8709') in 0.008204 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconaddedlocal@2x.png
-  artifactKey: Guid(02800fb9cff14da47a04572790384d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconaddedlocal@2x.png using Guid(02800fb9cff14da47a04572790384d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f2c733f960f78f9ebb6dfdb451e0af') in 0.022415 seconds 
+  Time since last request: 0.000017 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_MaskMap.png
+  artifactKey: Guid(6806f7d0dea886f418d8fdcd08e79c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_MaskMap.png using Guid(6806f7d0dea886f418d8fdcd08e79c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3211f8d8096895940cfc27efb7910f37') in 0.006457 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002768 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconoutofsyncoverlay.png
-  artifactKey: Guid(dc633de6e6e7415448c7568418239a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconoutofsyncoverlay.png using Guid(dc633de6e6e7415448c7568418239a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98575fbbc22868c9cdf7652d4e83709') in 0.016236 seconds 
+  Time since last request: 0.000020 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_Metallic.png
+  artifactKey: Guid(9e7f00efcc871b84aa374064460e60bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_Metallic.png using Guid(9e7f00efcc871b84aa374064460e60bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46b437cf062c203232e812e747c966e') in 0.008564 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.013912 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconplasticnotifyincoming.png
-  artifactKey: Guid(f31d2c855644aad4cb2030bce12859f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconplasticnotifyincoming.png using Guid(f31d2c855644aad4cb2030bce12859f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96327fcf012bb12f42aff56398a6081c') in 0.020978 seconds 
+  Time since last request: 0.000020 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_AmbientOcclusion.png
+  artifactKey: Guid(c0bb3b06c2fac93448933afb451c1328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_AmbientOcclusion.png using Guid(c0bb3b06c2fac93448933afb451c1328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5bcd461be21079a5eea99844d74e96a') in 0.006375 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008679 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconprivateoverlay.png
-  artifactKey: Guid(059fb5367594a3343814dc25ace454b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconprivateoverlay.png using Guid(059fb5367594a3343814dc25ace454b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e31aca6b24e56fd03fb7f788df58fb75') in 0.021794 seconds 
+  Time since last request: 0.000016 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_MaskMap.png
+  artifactKey: Guid(df9120914f8ec0e4180281c80393a9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_MaskMap.png using Guid(df9120914f8ec0e4180281c80393a9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '305ba0f68c27c20a0468c33ff594d229') in 0.007475 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006649 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconundo@2x.png
-  artifactKey: Guid(6d6088174bb906b49ad8428526ee337b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconundo@2x.png using Guid(6d6088174bb906b49ad8428526ee337b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ba72092b59cc41291351305a586c937') in 0.019763 seconds 
+  Time since last request: 0.000017 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_MaskMap.png
+  artifactKey: Guid(61bc5ca84bce4e64e84437b533ab6104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_MaskMap.png using Guid(61bc5ca84bce4e64e84437b533ab6104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19bab8088ed84265f24ff0d17b698dab') in 0.005899 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_refresh.png
-  artifactKey: Guid(92b8c447daf4d4b41a0ec148d1091261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_refresh.png using Guid(92b8c447daf4d4b41a0ec148d1091261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '869df9f5f6b251597ff7aa8363720525') in 0.017790 seconds 
+  Time since last request: 0.000014 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_Albedo.png
+  artifactKey: Guid(4ba4bd707b8e05441a6789abc9c64b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_Albedo.png using Guid(4ba4bd707b8e05441a6789abc9c64b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2739fcac636af0b5361721d2b3055ea2') in 0.007368 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_secondarytabclose.png
-  artifactKey: Guid(6975ee4c1f40caf4da8dd733ee2cfeaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_secondarytabclose.png using Guid(6975ee4c1f40caf4da8dd733ee2cfeaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9d3b1866db30f9dc418c3a93bbf7a51') in 0.018585 seconds 
+  Time since last request: 0.000018 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_AmbientOcclusion.png
+  artifactKey: Guid(c9be85b71c66d2e43899fef3f547bc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_AmbientOcclusion.png using Guid(c9be85b71c66d2e43899fef3f547bc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06c177dac37d706baa7b57d788b0bb1') in 0.006300 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_secondarytabclosehover@2x.png
-  artifactKey: Guid(9aa4348290784b2468144a97eb15d8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_secondarytabclosehover@2x.png using Guid(9aa4348290784b2468144a97eb15d8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f059aa1bdceffa3ce814f5c2ae6b33f1') in 0.026136 seconds 
+  Time since last request: 0.000018 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_BaseMap.png
+  artifactKey: Guid(6568069883bb22348a2c5cd75dc55a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 001)_BaseMap.png using Guid(6568069883bb22348a2c5cd75dc55a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4fe5e126f985fb993b33c2d0338c128') in 0.006098 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 23.278302 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/iconretainedoverlay@2x.png
-  artifactKey: Guid(a01087ce1455c7e4c8f2410c26afcfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/iconretainedoverlay@2x.png using Guid(a01087ce1455c7e4c8f2410c26afcfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f58604a4f0a910cc5106628477296a') in 0.016676 seconds 
+  Time since last request: 0.000019 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_Metallic.png
+  artifactKey: Guid(dc6883243ce65724a946b632ad2721ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 001)_Metallic.png using Guid(dc6883243ce65724a946b632ad2721ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920cb7b290b8fdb04eaca2c3c76d1818') in 0.005921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_Normal.png
+  artifactKey: Guid(e6cde31e04e1b3e4e807b1544d211426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_Normal.png using Guid(e6cde31e04e1b3e4e807b1544d211426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2cebe715fe85c289065fc7da05056b') in 0.005677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_Albedo.png
+  artifactKey: Guid(3aa2760ca1395ad45a599ae44fee3229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_Albedo.png using Guid(3aa2760ca1395ad45a599ae44fee3229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb0819460a728e48bbdebbb2cec0a38') in 0.006806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_Height.png
+  artifactKey: Guid(c541b776d2b199c41b912afdf97de6c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_Height.png using Guid(c541b776d2b199c41b912afdf97de6c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32fc802f3699453b185d960198ca189b') in 0.007057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_BaseMap.png
+  artifactKey: Guid(675c16943ceaa224db25590e9570a03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Fire (Torch Variation 001)_BaseMap.png using Guid(675c16943ceaa224db25590e9570a03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb377b8dd75d5465d6c4f892d55ab1ff') in 0.005645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_Metallic.png
+  artifactKey: Guid(a8c481c996da5a8488eec3f7e56c560c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Brown Wood (Torch Variation 002)_Metallic.png using Guid(a8c481c996da5a8488eec3f7e56c560c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57eb46482cc37c66265a6ddffcf54f0e') in 0.006452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.922442 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 002)_Albedo.png
+  artifactKey: Guid(b1a4b5b3028c3d3458d08c1a222503d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 002)_Albedo.png using Guid(b1a4b5b3028c3d3458d08c1a222503d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca0fdcb96fab01bb9062c9974ae2450') in 0.024025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 002)_AmbientOcclusion.png
+  artifactKey: Guid(225457835a111544caeccc24c62d582e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 002)_AmbientOcclusion.png using Guid(225457835a111544caeccc24c62d582e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5e6f8e203d93eec982746de658055c3') in 0.013552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 002)_Metallic.png
+  artifactKey: Guid(c677492dd2053b445978c495f1969874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2 Simple Modular Dungeon/Components/Texture Maps/ModularDungeonSeperatedMaterials_Metal (Torch Variation 002)_Metallic.png using Guid(c677492dd2053b445978c495f1969874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c95409f5a965da744a4ec545772f9732') in 0.011405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Level 1 Modular Castle/Assets/prefabs/torch.prefab
+  artifactKey: Guid(483ae661964d12e4f99b524da50200d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Modular Castle/Assets/prefabs/torch.prefab using Guid(483ae661964d12e4f99b524da50200d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33a17dd15e330c43d8cc659d2db21a4') in 0.143844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Level 1 Modular Castle/Assets/models/castle.fbx
+  artifactKey: Guid(a7cc7f41ce50a474aa1df610be0b810f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Modular Castle/Assets/models/castle.fbx using Guid(a7cc7f41ce50a474aa1df610be0b810f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9bdadb8a3b33c6b43e082b3a030c4b') in 0.248721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Level 1 Modular Castle/Assets/prefabs2/torch.prefab
+  artifactKey: Guid(2b28d52e9282f5844af4fa29dc0c1032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Modular Castle/Assets/prefabs2/torch.prefab using Guid(2b28d52e9282f5844af4fa29dc0c1032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eba9838e1f993c3850336d0a52b0dee') in 0.013946 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
