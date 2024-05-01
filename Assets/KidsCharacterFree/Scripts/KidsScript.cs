@@ -8,8 +8,8 @@ public class KidsScript : MonoBehaviour
   private Animator _Animator;
   private CharacterController _Ctrl;
   private Vector3 _MoveDirection = Vector3.zero;
-  //private GameObject _View_Camera;
-  //private Transform _Light;
+  private GameObject _View_Camera;
+  private Transform _Light;
   private SkinnedMeshRenderer _MeshRenderer;
   // Hash
   private static readonly int IdleState = Animator.StringToHash("Base Layer.idle");
@@ -31,15 +31,15 @@ public class KidsScript : MonoBehaviour
   {
     _Animator = this.GetComponent<Animator>();
     _Ctrl = this.GetComponent<CharacterController>();
-    //_View_Camera = GameObject.Find("Main Camera");
-    //_Light = GameObject.Find("Directional Light").transform;
+    _View_Camera = GameObject.Find("Main Camera");
+    _Light = GameObject.Find("Directional Light").transform;
     _MeshRenderer = this.transform.Find("Boy0.Humanoid.Body").gameObject.GetComponent<SkinnedMeshRenderer>();
   }
 
   void Update()
   {
-    //CAMERA();
-    //DIRECTION_LIGHT();
+    CAMERA();
+    DIRECTION_LIGHT();
     GRAVITY();
     STATUS();
 
@@ -123,18 +123,18 @@ public class KidsScript : MonoBehaviour
   //--------------------------------------------------------------------- CAMERA
   // camera moving
   //---------------------------------------------------------------------
- /* private void CAMERA ()
+  private void CAMERA ()
   {
     _View_Camera.transform.position = this.transform.position + new Vector3(0, 0.5f, 2.0f);
-  }
+  } */
   //--------------------------------------------------------------------- DIRECTION_LIGHT
   // Direction of light
   //---------------------------------------------------------------------
-  private void DIRECTION_LIGHT ()
+  /* private void DIRECTION_LIGHT ()
   {
     Vector3 pos = _Light.position - this.transform.position;
     _MeshRenderer.material.SetVector("_LightDir", pos);
-  }*/
+  }
   //--------------------------------------------------------------------- GRAVITY
   // gravity for fall of slime
   //---------------------------------------------------------------------
@@ -383,5 +383,15 @@ public class KidsScript : MonoBehaviour
       _Animator.CrossFade(StandUpFaintState, 0.1f, 0, 0);
     }
   }
+}
+
+private void UPSTAIRS()
+{
+    if ()
+}
+
+private void DOWNSTAIRS()
+{
+  
 }
 }
