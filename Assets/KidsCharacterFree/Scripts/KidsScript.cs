@@ -8,8 +8,8 @@ public class KidsScript : MonoBehaviour
   private Animator _Animator;
   private CharacterController _Ctrl;
   private Vector3 _MoveDirection = Vector3.zero;
-  private GameObject _View_Camera;
-  private Transform _Light;
+  //private GameObject _View_Camera;
+  //private Transform _Light;
   private SkinnedMeshRenderer _MeshRenderer;
   // Hash
   private static readonly int IdleState = Animator.StringToHash("Base Layer.idle");
@@ -31,15 +31,15 @@ public class KidsScript : MonoBehaviour
   {
     _Animator = this.GetComponent<Animator>();
     _Ctrl = this.GetComponent<CharacterController>();
-    _View_Camera = GameObject.Find("Main Camera");
-    _Light = GameObject.Find("Directional Light").transform;
+    //_View_Camera = GameObject.Find("Main Camera");
+    //_Light = GameObject.Find("Directional Light").transform;
     _MeshRenderer = this.transform.Find("Boy0.Humanoid.Body").gameObject.GetComponent<SkinnedMeshRenderer>();
   }
 
   void Update()
   {
-    CAMERA();
-    DIRECTION_LIGHT();
+    //CAMERA();
+    //DIRECTION_LIGHT();
     GRAVITY();
     STATUS();
 
@@ -123,7 +123,7 @@ public class KidsScript : MonoBehaviour
   //--------------------------------------------------------------------- CAMERA
   // camera moving
   //---------------------------------------------------------------------
-  private void CAMERA ()
+ /* private void CAMERA ()
   {
     _View_Camera.transform.position = this.transform.position + new Vector3(0, 0.5f, 2.0f);
   }
@@ -134,7 +134,7 @@ public class KidsScript : MonoBehaviour
   {
     Vector3 pos = _Light.position - this.transform.position;
     _MeshRenderer.material.SetVector("_LightDir", pos);
-  }
+  }*/
   //--------------------------------------------------------------------- GRAVITY
   // gravity for fall of slime
   //---------------------------------------------------------------------
@@ -146,7 +146,7 @@ public class KidsScript : MonoBehaviour
         _MoveDirection.y = -0.1f;
       }
     }
-    Debug.Log(_MoveDirection.y);
+    //Debug.Log(_MoveDirection.y);
     _MoveDirection.y -= 0.1f;
     _Ctrl.Move(_MoveDirection * Time.deltaTime);
   }
@@ -169,27 +169,48 @@ public class KidsScript : MonoBehaviour
   {
     float speed = _Animator.GetFloat(SpeedParameter);
     //------------------------------------------------------------ Speed
-    /*if(Input.GetKey(KeyCode.Z))
+    if (Input.GetKeyDown(KeyCode.Z))
     {
-      if(speed <= 2){
-        //speed += 0.01f;
-      }
-      else if(speed >= 2){
-        //speed = 2;
-      }
+        /*if(speed <= 2){
+            //speed += 0.01f;
+        }
+        else if(speed >= 2){
+            //speed = 2;
+        }
+        }
+        else {
+        if(speed >= 1){
+            //speed -= 0.01f;
+        }
+        else if(speed <= 1){
+            //speed = 1;
+        }
+        }*/
+        speed = 30;
+        _Animator.SetFloat(SpeedParameter, speed);
     }
-    else {
-      if(speed >= 1){
-        //speed -= 0.01f;
-      }
-      else if(speed <= 1){
-        //speed = 1;
-      }
-    }*/
-    //_Animator.SetFloat(SpeedParameter, speed);
-
-    //------------------------------------------------------------ Forward
-    if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKeyUp(KeyCode.Z))
+            {
+                /*if(speed <= 2){
+                    //speed += 0.01f;
+                }
+                else if(speed >= 2){
+                    //speed = 2;
+                }
+                }
+                else {
+                if(speed >= 1){
+                    //speed -= 0.01f;
+                }
+                else if(speed <= 1){
+                    //speed = 1;
+                }
+                }*/
+                speed = 20;
+                _Animator.SetFloat(SpeedParameter, speed);
+            }
+            //------------------------------------------------------------ Forward
+            if (Input.GetKey(KeyCode.UpArrow))
     {
       // velocity
       if(_Animator.GetCurrentAnimatorStateInfo(0).fullPathHash == MoveState)
