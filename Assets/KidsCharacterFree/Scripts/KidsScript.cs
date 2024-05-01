@@ -169,24 +169,24 @@ public class KidsScript : MonoBehaviour
   {
     float speed = _Animator.GetFloat(SpeedParameter);
     //------------------------------------------------------------ Speed
-    if(Input.GetKey(KeyCode.Z))
+    /*if(Input.GetKey(KeyCode.Z))
     {
       if(speed <= 2){
-        speed += 0.01f;
+        //speed += 0.01f;
       }
       else if(speed >= 2){
-        speed = 2;
+        //speed = 2;
       }
     }
     else {
       if(speed >= 1){
-        speed -= 0.01f;
+        //speed -= 0.01f;
       }
       else if(speed <= 1){
-        speed = 1;
+        //speed = 1;
       }
-    }
-    _Animator.SetFloat(SpeedParameter, speed);
+    }*/
+    //_Animator.SetFloat(SpeedParameter, speed);
 
     //------------------------------------------------------------ Forward
     if (Input.GetKey(KeyCode.UpArrow))
