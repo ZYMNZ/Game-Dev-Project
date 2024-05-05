@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
+using Arsh.Scripts; 
 
 public class EnemyAIController : MonoBehaviour
 {
-   
+    public PlayerController playerController;
     public NavMeshAgent agent;
 
     public Transform player;
@@ -13,6 +15,7 @@ public class EnemyAIController : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
 
     public float health;
+    public Slider healthSlider;
 
     //Patroling
     public Vector3 walkPoint;
@@ -32,10 +35,12 @@ public class EnemyAIController : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        health = 100;
     }
 
     private void Update()
     {
+        healthSlider.value = health;
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
@@ -43,6 +48,16 @@ public class EnemyAIController : MonoBehaviour
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        
+    }
+    //when enemy attacks
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // Reduce player's health
+            playerController.TakeDamage(20); 
+        }
     }
 
     private void Patroling()

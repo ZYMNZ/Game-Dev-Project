@@ -1,10 +1,14 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace Arsh.Scripts
 {
     public class PlayerController : MonoBehaviour
     {
+        public int health;
+        public Slider healthSlider;
+
         [SerializeField] private float movementForce = 1f;
 
         [SerializeField] private float jumpForce = 5f;
@@ -36,6 +40,10 @@ namespace Arsh.Scripts
             _rb = GetComponent<Rigidbody>();
             _inputManager = new InputManager();
             _animator = GetComponent<Animator>();
+            health = 100;
+        }
+        void Update(){
+            healthSlider.value = health;
         }
 
         private void Start()
@@ -124,6 +132,14 @@ namespace Arsh.Scripts
             _attackTrigger = true;
             // Debug.Log(AttackTrigger);
             _animator.SetTrigger("attack");
+        }
+        public void TakeDamage(int damage)
+        {
+            health -= damage;
+            if (health <= 0)
+            {
+                //end game?
+            }
         }
     }
 }
