@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Hibba/Scenes/UIMenu.unity
+    guid: 944d575212c49f947b3d50677decee8f
+  - enabled: 1
+    path: Assets/Hibba/Scenes/TutorialScene.unity
+    guid: 592d472d39a6b6c40a3ebe89a29d0747
   m_configObjects: {}
