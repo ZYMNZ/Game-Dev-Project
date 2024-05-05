@@ -22,12 +22,25 @@ namespace Arsh.Scripts
 
         // Movement Fields
         private Rigidbody _rb;
+        private bool _attackTrigger;
+
+        // Attack trigger
+        public bool AttackTrigger
+        {
+            get => _attackTrigger;
+            set => _attackTrigger = value;
+        }
 
         private void Awake()
         {
             _rb = GetComponent<Rigidbody>();
             _inputManager = new InputManager();
             _animator = GetComponent<Animator>();
+        }
+
+        private void Start()
+        {
+            _attackTrigger = false;
         }
 
         private void FixedUpdate()
@@ -44,14 +57,17 @@ namespace Arsh.Scripts
             horizontalVelocity.y = 0;
             if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
                 _rb.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * _rb.velocity.y;
-        
+            
             LookAt();
+            
+            _attackTrigger = false;
+            // Debug.Log(AttackTrigger);
         }
 
         private void OnEnable()
         {
             _inputManager.Player.Jump.started += Jump;
-            // _inputManager.Player.Attack.started += Attack;
+            _inputManager.Player.Attack.started += Attack;
             _move = _inputManager.Player.Move;
             _inputManager.Player.Enable();
         }
@@ -59,7 +75,7 @@ namespace Arsh.Scripts
         private void OnDisable()
         {
             _inputManager.Player.Jump.started -= Jump;
-            // _inputManager.Player.Attack.started -= Attack;
+            _inputManager.Player.Attack.started -= Attack;
             _inputManager.Player.Disable();
         }
 
@@ -77,7 +93,7 @@ namespace Arsh.Scripts
                 _rb.angularVelocity = Vector3.zero;
             }
         }
-    
+        
         private Vector3 GetCameraForward(Camera playerCamera)
         {
             Vector3 forward = playerCamera.transform.forward;
@@ -102,9 +118,11 @@ namespace Arsh.Scripts
             Ray ray = new Ray(transform.position + Vector3.up * 0.25f, Vector3.down);
             return Physics.Raycast(ray, out RaycastHit hit, 0.3f);
         }
-    
+        
         private void Attack(InputAction.CallbackContext obj)
         {
+            _attackTrigger = true;
+            // Debug.Log(AttackTrigger);
             _animator.SetTrigger("attack");
         }
     }

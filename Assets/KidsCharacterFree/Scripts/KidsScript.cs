@@ -363,19 +363,19 @@ public class KidsScript : MonoBehaviour
     }
   }
 
-  private void OnTriggerEnter(Collider trigger)
-  {
-    if (trigger.transform.parent.tag == "doorWay1")
-    {
-      Animator doorAnimator = trigger.transform.parent.Find("door").GetComponent<Animator>();
-      doorAnimator.Play("door_open");
-    }
-
-    if (trigger.transform.parent.tag == "doorWay2")
-    {
-      Animator doorAnimator = trigger.transform.parent.GetComponent<Animator>();
-      doorAnimator.Play("door_open_2");
-    }
-  }
+  // private void OnTriggerEnter(Collider trigger)
+  // {
+  //   if (trigger.transform.parent.tag == "doorWay1")
+  //   {
+  //     Animator doorAnimator = trigger.transform.parent.Find("door").GetComponent<Animator>();
+  //     doorAnimator.Play("door_open");
+  //   }
+  //
+  //   if (trigger.transform.parent.tag == "doorWay2")
+  //   {
+  //     Animator doorAnimator = trigger.transform.parent.GetComponent<Animator>();
+  //     doorAnimator.Play("door_open_2");
+  //   }
+  // }
 }
 }
