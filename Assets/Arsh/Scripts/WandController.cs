@@ -7,6 +7,8 @@ namespace Arsh.Scripts
         private PlayerController _playerController;
         private bool _isAttackTriggered;
 
+        public int damageAmount = 20;
+
         public GameObject player;
 
         // Start is called before the first frame update
@@ -24,6 +26,16 @@ namespace Arsh.Scripts
 
         private void OnTriggerEnter(Collider other)
         {
+            /*
+            if (other.tag == "enemy") {
+                //transform.parent = other.transform;
+                other.GetComponent<EnemyHealthBar>().TakeDamage(damageAmount);
+            }
+            */
+             if (_isAttackTriggered && other.tag == "enemy")
+            {
+                other.GetComponent<EnemyHealthBar>().TakeDamage(damageAmount);
+            }
             
             // Debug.Log(_isAttackTriggered);
             // if (other.name == "Cube")

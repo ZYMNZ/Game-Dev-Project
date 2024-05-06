@@ -7,6 +7,7 @@ namespace Arsh.Scripts
 {
     public class PlayerController : MonoBehaviour
     {
+        public List<EnemyHealthBar> enemyHealthBars = new List<EnemyHealthBar>();
         public List<EnemyAIController> enemyControllers = new List<EnemyAIController>();
        
         public int health;
@@ -43,6 +44,7 @@ namespace Arsh.Scripts
             _rb = GetComponent<Rigidbody>();
             _inputManager = new InputManager();
             _animator = GetComponent<Animator>();
+            //_wandCollider = GetComponentInChildren<Collider>(); 
             _wandCollider = wand.GetComponent<Collider>();
             health = 100;
         }
@@ -138,6 +140,18 @@ namespace Arsh.Scripts
             _attackTrigger = true;
             _animator.SetTrigger("attack");
             
+             // Apply damage to enemies within range
+            foreach (EnemyHealthBar enemyHealthBar in enemyHealthBars)
+            {
+                if (Vector3.Distance(transform.position, enemyHealthBar.transform.position) < 5f)
+                {
+                    enemyHealthBar.TakeDamage(35);
+                }
+            }
+
+            Invoke(nameof(DisableWandCollider), 0.1f);
+
+            /*
             // Apply damage only to enemy controllers within range
             foreach (EnemyAIController enemyController in enemyControllers)
             {
@@ -148,7 +162,9 @@ namespace Arsh.Scripts
             }
 
             Invoke("DisableWandCollider", 0.1f);
+            */
         }
+        
         
         private void DisableWandCollider()
         {

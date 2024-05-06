@@ -6,9 +6,9 @@ TagManager:
   tags:
   - doorWay2
   - doorWay1
-  - skeleton
-  - ghost
   - powerup
+  - waypoints
+  - enemy
   layers:
   - Default
   - TransparentFX
