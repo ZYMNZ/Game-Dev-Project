@@ -109,7 +109,7 @@ NavMeshSettings:
     agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 1.75
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 4dfb74c3e96ca674292cc2da8924e185, type: 2}
 --- !u!1001 &1964322521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,14 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 60560636253528722, guid: e3a533a25f905c14e9fd3416235210ac, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1497612509897867675, guid: e3a533a25f905c14e9fd3416235210ac, type: 3}
-      propertyPath: m_Name
-      value: NarrowCorner2
-      objectReference: {fileID: 0}
     - target: {fileID: 5973535723888788218, guid: e3a533a25f905c14e9fd3416235210ac, type: 3}
       propertyPath: m_Name
       value: LevelOne_Logan 1
