@@ -9,25 +9,37 @@ public class EnemyHealthBar : MonoBehaviour
     public int HP = 100;
     public Slider healthBar;
     public Animator animator;
-    
-    //public List<EnemyAIController> enemyControllers = new List<EnemyAIController>();
-    public void TakeDamage(int damageAmount){
-        
-        HP -= damageAmount;
-        if (HP <= 0) {
-            //AudioManager.instance
-            animator.SetTrigger("die");
-            GetComponent<Collider>().enabled = false;
-            
-        }
-        else {
-             animator.SetTrigger("damage");
-        }
-    }
+
+   private bool isDying = false;
 
     // Update is called once per frame
     void Update()
     {
         healthBar.value = HP;
+    }
+
+    public void TakeDamage(int damageAmount)
+    {
+        HP -= damageAmount;
+        if (HP <= 0 && !isDying)
+        {
+           
+            isDying = true;
+           
+            animator.SetTrigger("die");
+            GetComponent<Collider>().enabled = false;
+            Invoke("DestroyAfterDelay", 5f);
+        }
+        else if (HP > 0)
+        {
+            animator.SetTrigger("damage");
+        }
+    }
+
+    // This method will be invoked after 5 seconds
+    private void DestroyAfterDelay()
+    {
+        // Destroy the game object
+        gameObject.SetActive(false);
     }
 }

@@ -30,12 +30,14 @@ public class EnemyAIController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Reduce player's health
-            playerController.TakeDamage(20);
+            playerController.TakeDamage(5);
             //playerController.healthSlider.value = PlayerController.health;
         }
+        /*
         if(health<=0){
             DestroyEnemy();
         }
+        */
     }
 
     /*
@@ -46,11 +48,12 @@ public class EnemyAIController : MonoBehaviour
             if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
         }
         */
+        /*
     public void DestroyEnemy()
     {
         //Destroy(gameObject);
         gameObject.SetActive(false);
-    }
+    }*/
 }
 
 
