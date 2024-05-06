@@ -122,7 +122,8 @@ public class EnemyAIController : MonoBehaviour
     }
     private void DestroyEnemy()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);   
     }
 
     private void OnDrawGizmosSelected()

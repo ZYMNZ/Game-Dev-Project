@@ -6,6 +6,10 @@ namespace Arsh.Scripts
 {
     public class PlayerController : MonoBehaviour
     {
+       public EnemyAIController enemyAIController;
+       
+        
+
         public int health;
         public Slider healthSlider;
 
@@ -26,9 +30,11 @@ namespace Arsh.Scripts
 
         // Movement Fields
         private Rigidbody _rb;
-        private bool _attackTrigger;
+        public bool _attackTrigger;
 
         // Attack trigger
+        public GameObject wand;
+        private Collider _wandCollider;
         public bool AttackTrigger
         {
             get => _attackTrigger;
@@ -40,6 +46,7 @@ namespace Arsh.Scripts
             _rb = GetComponent<Rigidbody>();
             _inputManager = new InputManager();
             _animator = GetComponent<Animator>();
+            _wandCollider = wand.GetComponent<Collider>();
             health = 100;
         }
         void Update(){
@@ -127,12 +134,27 @@ namespace Arsh.Scripts
             return Physics.Raycast(ray, out RaycastHit hit, 0.3f);
         }
         
+        
         private void Attack(InputAction.CallbackContext obj)
         {
+            _wandCollider.enabled = true;
             _attackTrigger = true;
+            Debug.Log(_wandCollider.enabled);
             // Debug.Log(AttackTrigger);
             _animator.SetTrigger("attack");
+            
+            enemyAIController.TakeDamage(35);
+
+            Invoke("DisableWandCollider", 0.1f);
+
         }
+        
+        private void DisableWandCollider()
+        {
+            _wandCollider.enabled = false;
+            Debug.Log(_wandCollider.enabled);
+        }
+
         public void TakeDamage(int damage)
         {
             health -= damage;
