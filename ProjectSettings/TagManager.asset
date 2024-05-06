@@ -6,8 +6,6 @@ TagManager:
   tags:
   - doorWay2
   - doorWay1
-  - ghost
-  - skeleton
   layers:
   - Default
   - TransparentFX
