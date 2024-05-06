@@ -146,6 +146,7 @@ namespace Arsh.Scripts
                 if (Vector3.Distance(transform.position, enemyHealthBar.transform.position) < 5f)
                 {
                     enemyHealthBar.TakeDamage(35);
+                    
                 }
             }
 
@@ -174,10 +175,14 @@ namespace Arsh.Scripts
         public void TakeDamage(int damage)
         {
             health -= damage;
-            if (health <= 0)
-            {
-                //end game?
-            }
+            healthSlider.value = health;
+            Debug.Log(healthSlider.value);
+            Canvas.ForceUpdateCanvases();
+            // if (health <= 0)
+            // {
+            //     //end game?
+            // }
         }
+        
     }
 }

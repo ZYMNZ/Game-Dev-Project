@@ -31,6 +31,10 @@ public class EnemyAIController : MonoBehaviour
         {
             // Reduce player's health
             playerController.TakeDamage(20);
+            //playerController.healthSlider.value = PlayerController.health;
+        }
+        if(health<=0){
+            DestroyEnemy();
         }
     }
 
@@ -42,7 +46,7 @@ public class EnemyAIController : MonoBehaviour
             if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
         }
         */
-    private void DestroyEnemy()
+    public void DestroyEnemy()
     {
         //Destroy(gameObject);
         gameObject.SetActive(false);

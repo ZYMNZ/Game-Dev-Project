@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class EnemyHealthBar : MonoBehaviour
 {
     // Start is called before the first frame update
-    private int HP = 100;
+    public int HP = 100;
     public Slider healthBar;
     public Animator animator;
+    
+    //public List<EnemyAIController> enemyControllers = new List<EnemyAIController>();
     public void TakeDamage(int damageAmount){
         
         HP -= damageAmount;
@@ -16,6 +18,7 @@ public class EnemyHealthBar : MonoBehaviour
             //AudioManager.instance
             animator.SetTrigger("die");
             GetComponent<Collider>().enabled = false;
+            
         }
         else {
              animator.SetTrigger("damage");
