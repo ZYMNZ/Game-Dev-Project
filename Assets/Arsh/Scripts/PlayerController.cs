@@ -1,24 +1,20 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 namespace Arsh.Scripts
 {
     public class PlayerController : MonoBehaviour
     {
-       public EnemyAIController enemyAIController;
+        public List<EnemyAIController> enemyControllers = new List<EnemyAIController>();
        
-        
-
         public int health;
         public Slider healthSlider;
 
         [SerializeField] private float movementForce = 1f;
-
         [SerializeField] private float jumpForce = 5f;
-
         [SerializeField] private float maxSpeed = 5f;
-
         [SerializeField] private Camera playerCamera;
 
         private Vector3 _forceDirection = Vector3.zero;
@@ -35,6 +31,7 @@ namespace Arsh.Scripts
         // Attack trigger
         public GameObject wand;
         private Collider _wandCollider;
+
         public bool AttackTrigger
         {
             get => _attackTrigger;
@@ -49,7 +46,9 @@ namespace Arsh.Scripts
             _wandCollider = wand.GetComponent<Collider>();
             health = 100;
         }
-        void Update(){
+
+        private void Update()
+        {
             healthSlider.value = health;
         }
 
@@ -76,7 +75,6 @@ namespace Arsh.Scripts
             LookAt();
             
             _attackTrigger = false;
-            // Debug.Log(AttackTrigger);
         }
 
         private void OnEnable()
@@ -134,25 +132,27 @@ namespace Arsh.Scripts
             return Physics.Raycast(ray, out RaycastHit hit, 0.3f);
         }
         
-        
         private void Attack(InputAction.CallbackContext obj)
         {
             _wandCollider.enabled = true;
             _attackTrigger = true;
-            Debug.Log(_wandCollider.enabled);
-            // Debug.Log(AttackTrigger);
             _animator.SetTrigger("attack");
             
-            enemyAIController.TakeDamage(35);
+            // Apply damage only to enemy controllers within range
+            foreach (EnemyAIController enemyController in enemyControllers)
+            {
+                if (Vector3.Distance(transform.position, enemyController.transform.position) < 5f)
+                {
+                    enemyController.TakeDamage(35);
+                }
+            }
 
             Invoke("DisableWandCollider", 0.1f);
-
         }
         
         private void DisableWandCollider()
         {
             _wandCollider.enabled = false;
-            Debug.Log(_wandCollider.enabled);
         }
 
         public void TakeDamage(int damage)
