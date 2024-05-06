@@ -4,25 +4,21 @@ using UnityEngine;
 
 public class KidsScriptLite : MonoBehaviour
 {
-    private int speedUpTime;
-    public static int speedParameter;
-    private Animator animator;
+    private Animator _animator;
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
-        speedUpTime = speedParameter = animator.GetInteger("speed"); // should be 10
-        Debug.Log(speedParameter);
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        //Debug.Log(speedUpTime);
-        //Debug.Log(speedParameter);
-        SPEED_POWERUP();
+        //Debug.Log($"speedUpTime: {speedUpTime}");
+        //Debug.Log($"speedUpTime: {speedParameter}");
     }
-
-    private void OnTriggerEnter(Collider trigger)
+    
+    // I get nonsensical errors so i'm going to comment this out for now.
+    /* private void OnTriggerEnter(Collider trigger)
     {
         //Debug.Log(trigger.gameObject.name);
         if (trigger.transform.parent.tag == "doorWay1")
@@ -48,31 +44,8 @@ public class KidsScriptLite : MonoBehaviour
 
         if (trigger.transform.parent.tag == "powerup")
         {
+            Arsh.Scripts.PlayerController.speedPowerUp = true;
             trigger.transform.parent.gameObject.SetActive(false);
-            // start the speed up, should be 11
-            speedUpTime += 1;
         }
-    }  
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        
-    }
-
-    private void SPEED_POWERUP()
-    {
-        // if speed powerup is enabled
-        if (speedUpTime > 10 && speedUpTime < 20)
-        {
-            animator.SetInteger(speedParameter, speedUpTime);
-            speedUpTime++;
-        }
-
-        // reset speedParameter to its original value
-        if (speedUpTime == 20)
-        {
-            speedUpTime = 10;
-            animator.SetInteger(speedParameter, speedUpTime);
-        }
-    }
+    }   */
 }

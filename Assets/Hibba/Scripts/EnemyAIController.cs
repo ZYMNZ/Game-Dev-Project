@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
-using Arsh.Scripts; 
+using Arsh.Scripts;
 
 public class EnemyAIController : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class EnemyAIController : MonoBehaviour
     public float health;
     public Slider healthSlider;
 
-    
+
 
     private void Awake()
     {
@@ -21,8 +21,8 @@ public class EnemyAIController : MonoBehaviour
     private void Update()
     {
         healthSlider.value = health;
-       
-        
+
+
     }
     //when enemy attacks
     private void OnTriggerEnter(Collider other)
@@ -30,21 +30,30 @@ public class EnemyAIController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Reduce player's health
-            playerController.TakeDamage(20); 
+            playerController.TakeDamage(5);
+            //playerController.healthSlider.value = PlayerController.health;
         }
+        /*
+        if(health<=0){
+            DestroyEnemy();
+        }
+        */
     }
 
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
+    /*
+        public void TakeDamage(int damage)
+        {
+            health -= damage;
 
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
-    }
-    private void DestroyEnemy()
+            if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
+        }
+        */
+        /*
+    public void DestroyEnemy()
     {
         //Destroy(gameObject);
-        gameObject.SetActive(false);   
-    }
+        gameObject.SetActive(false);
+    }*/
 }
 
 

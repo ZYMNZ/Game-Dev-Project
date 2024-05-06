@@ -6,12 +6,12 @@ namespace Sample
 {
     public class KidsScript2 : MonoBehaviour
     {
-        [SerializeField] private Animator _animator;
+        private Animator _animator;
         public float moveSpeed = 5f; // Adjust the speed as needed
 
         void Start ()
         {
-            _animator = GetComponentInChildren<Animator>();
+            _animator = GetComponent<Animator>();
         }
         void Update()
         {

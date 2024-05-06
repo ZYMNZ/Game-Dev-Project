@@ -6,6 +6,9 @@ TagManager:
   tags:
   - doorWay2
   - doorWay1
+  - powerup
+  - waypoints
+  - enemy
   layers:
   - Default
   - TransparentFX
