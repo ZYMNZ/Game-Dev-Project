@@ -64,7 +64,7 @@ public class UIManager : MonoBehaviour
     {
         audioManager.PlaySFx(audioManager.click);
         audioManager.StopMusic();
-        SceneManager.LoadScene("castleDemo");
+        SceneManager.LoadScene("Level1");
 
     }
 
@@ -72,7 +72,7 @@ public class UIManager : MonoBehaviour
     {
         audioManager.PlaySFx(audioManager.click);
         audioManager.StopMusic();
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene("TutorialScene 1");
     }
 
 
@@ -106,14 +106,14 @@ public class UIManager : MonoBehaviour
 
         string currentSceneName = SceneManager.GetActiveScene().name;
 
-        if (currentSceneName == "TutorialScene")
+        if (currentSceneName == "TutorialScene 1")
         {
-            SceneManager.LoadScene("TutorialScene");
+            SceneManager.LoadScene("TutorialScene 1");
         }
 
-        else if (currentSceneName == "castleDemo")
+        else if (currentSceneName == "Level1")
         {
-            SceneManager.LoadScene("castleDemo");
+            SceneManager.LoadScene("Level1");
         }
         else
         {
