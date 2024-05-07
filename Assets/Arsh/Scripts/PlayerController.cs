@@ -198,7 +198,7 @@ namespace Arsh.Scripts
                 else
                     speedCount++;
 
-                transform.Find("Particles").gameObject.SetActive(true);
+                transform.Find("Particles")?.gameObject.SetActive(true);
             }
             
             if(speedCount == 300)
@@ -210,7 +210,7 @@ namespace Arsh.Scripts
             if (!speedPowerUp && maxSpeed >= 5)
             {
                 maxSpeed = 5;
-                transform.Find("Particles").gameObject.SetActive(false);
+                transform.Find("Particles")?.gameObject.SetActive(false);
             }
         }
     }

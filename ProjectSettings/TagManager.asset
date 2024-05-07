@@ -9,6 +9,7 @@ TagManager:
   - powerup
   - waypoints
   - enemy
+  - key
   layers:
   - Default
   - TransparentFX
