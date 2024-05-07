@@ -111,9 +111,9 @@ public class UIManager : MonoBehaviour
             SceneManager.LoadScene("TutorialScene");
         }
 
-        else if (currentSceneName == "CastleDemo")
+        else if (currentSceneName == "castleDemo")
         {
-            SceneManager.LoadScene("CastleDemo");
+            SceneManager.LoadScene("castleDemo");
         }
         else
         {

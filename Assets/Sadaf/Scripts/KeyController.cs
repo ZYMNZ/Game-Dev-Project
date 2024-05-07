@@ -1,37 +1,71 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-
 public class KeyController : MonoBehaviour
 {
-    private static float key_count = 0;
-    // Start is called before the first frame update
+    private static int keyCount = 0;
+    public int totalKeys = 5;
     public TMP_Text keyText;
+    public Animator animator;
+
+    public AudioManager manager;
+    public GameObject victoryCanvas;
+    public float victoryDuration = 5f;
+    private bool victoryActivated = false;
+
     void Start()
     {
-        
+        victoryCanvas.SetActive(false);
+
+        //manager = GetComponent<AudioManager>();
+
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(key_count >= 5){
-            //end game/new level?
+        if (keyCount >= totalKeys && !victoryActivated)
+        {
+            // Trigger victory pose animation
+            DestroyAllEnemies();
+            manager.PlayMusicInLoop(manager.victory, true);
+            animator.SetTrigger("victory");
+
+            // Activate victory canvas
+            victoryCanvas.SetActive(true);
+            victoryActivated = true;
+
+            // Deactivate victory canvas after specified duration
+            Invoke("DeactivateVictoryCanvas", victoryDuration);
         }
-        keyText.text = "Keys: " + key_count+"/5";
+        keyText.text = "Keys: " + keyCount + "/" + totalKeys;
     }
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Player" && key_count<5)
+        if (col.gameObject.tag == "Player" && keyCount < totalKeys)
         {
-            key_count+=1;
-            //Debug.Log("Key # "+key_count+ " Collected!");
-            Destroy(this.gameObject);
+            keyCount++;
+            //manager.PlaySFx(manager.collectKey);
+            gameObject.SetActive(false);
         }
     }
+
+    void DestroyAllEnemies()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            enemy.SetActive(false);
+        }
+    }
+
+    void DeactivateVictoryCanvas()
+    {
+        victoryCanvas.SetActive(false);
+    }
+
 }
