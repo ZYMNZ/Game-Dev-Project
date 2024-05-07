@@ -17,6 +17,8 @@ namespace Arsh.Scripts
         [SerializeField] private float jumpForce = 5f;
         [SerializeField] private float maxSpeed = 5f;
         [SerializeField] private Camera playerCamera;
+        public static bool speedPowerUp = false; // accesed by kidsscriptlite!
+        private static int speedCount = 0;
 
         private Vector3 _forceDirection = Vector3.zero;
         private Animator _animator;
@@ -52,6 +54,8 @@ namespace Arsh.Scripts
         private void Update()
         {
             healthSlider.value = health;
+            PowerUp_Speed();
+            Debug.Log(speedCount);
         }
 
         private void Start()
@@ -183,6 +187,31 @@ namespace Arsh.Scripts
             //     //end game?
             // }
         }
-        
+
+        /* CONDITION TO CHANGE SPEEDPOWERUP TO TRUE IS FOUND IN KIDSCRIPTLITE, MEGANE FOLDER */
+        private void PowerUp_Speed()
+        {
+            if (speedPowerUp)
+            {
+                if (maxSpeed <= 5) // if the speed has not been applied yet
+                    maxSpeed = 100;
+                else
+                    speedCount++;
+
+                transform.Find("Particles").gameObject.SetActive(true);
+            }
+            
+            if(speedCount == 300)
+            {
+                speedPowerUp = false; // reset the speed to normal
+                speedCount = 0;
+            }
+
+            if (!speedPowerUp && maxSpeed >= 5)
+            {
+                maxSpeed = 5;
+                transform.Find("Particles").gameObject.SetActive(false);
+            }
+        }
     }
 }

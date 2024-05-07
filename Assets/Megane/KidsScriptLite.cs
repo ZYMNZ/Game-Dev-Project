@@ -15,10 +15,11 @@ public class KidsScriptLite : MonoBehaviour
     {
         //Debug.Log($"speedUpTime: {speedUpTime}");
         //Debug.Log($"speedUpTime: {speedParameter}");
+        //Debug.Log($"speed: {Arsh.Scripts.PlayerController.speedPowerUp}");
     }
     
     // I get nonsensical errors so i'm going to comment this out for now.
-    /* private void OnTriggerEnter(Collider trigger)
+    private void OnTriggerEnter(Collider trigger)
     {
         //Debug.Log(trigger.gameObject.name);
         if (trigger.transform.parent.tag == "doorWay1")
@@ -47,5 +48,5 @@ public class KidsScriptLite : MonoBehaviour
             Arsh.Scripts.PlayerController.speedPowerUp = true;
             trigger.transform.parent.gameObject.SetActive(false);
         }
-    }   */
+    }  
 }
