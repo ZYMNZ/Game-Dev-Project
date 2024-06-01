@@ -145,7 +145,7 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""c1882fa2-c242-46ea-90f6-20f1bce31206"",
-                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
