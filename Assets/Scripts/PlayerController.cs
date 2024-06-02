@@ -156,7 +156,7 @@ namespace Arsh.Scripts
             {
                 if (Vector3.Distance(transform.position, enemyHealthBar.transform.position) < 5f)
                 {
-                    enemyHealthBar.TakeDamage(35);
+                    enemyHealthBar.TakeDamage(5);
 
                 }
             }
