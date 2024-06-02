@@ -49,4 +49,5 @@ public class KidsScriptLite : MonoBehaviour
             trigger.transform.parent.gameObject.SetActive(false);
         }
     }  
+    
 }

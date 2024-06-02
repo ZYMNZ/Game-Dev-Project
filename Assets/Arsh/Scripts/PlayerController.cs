@@ -17,7 +17,7 @@ namespace Arsh.Scripts
         [SerializeField] private float jumpForce = 5f;
         [SerializeField] private float maxSpeed = 5f;
         [SerializeField] private Camera playerCamera;
-        public static bool speedPowerUp = false; // accesed by kidsscriptlite!
+        public static bool speedPowerUp = false;
         private static int speedCount = 0;
 
         private Vector3 _forceDirection = Vector3.zero;
@@ -55,7 +55,12 @@ namespace Arsh.Scripts
         {
             healthSlider.value = health;
             PowerUp_Speed();
-            Debug.Log(speedCount);
+
+            // refractor later
+            if (Input.GetKeyUp(KeyCode.I) && transform.Find("ProjectilePoint").transform.childCount != 0) // if there is a projectile picked up
+            {
+                ThrowProjectile();
+            }
         }
 
         private void Start()
@@ -188,20 +193,19 @@ namespace Arsh.Scripts
             // }
         }
 
-        /* CONDITION TO CHANGE SPEEDPOWERUP TO TRUE IS FOUND IN KIDSCRIPTLITE, MEGANE FOLDER */
         private void PowerUp_Speed()
         {
             if (speedPowerUp)
             {
                 if (maxSpeed <= 5) // if the speed has not been applied yet
-                    maxSpeed = 100;
+                    maxSpeed = 75;
                 else
                     speedCount++;
 
                 transform.Find("Particles")?.gameObject.SetActive(true);
             }
             
-            if(speedCount == 300)
+            if(speedCount == 250)
             {
                 speedPowerUp = false; // reset the speed to normal
                 speedCount = 0;
@@ -213,5 +217,72 @@ namespace Arsh.Scripts
                 transform.Find("Particles")?.gameObject.SetActive(false);
             }
         }
+
+        private void OnTriggerEnter(Collider trigger)
+        {
+            var triggerParent = trigger.transform.parent;
+            //Debug.Log(trigger.gameObject.name);
+            if (triggerParent.tag == "doorWay1")
+            {
+                Animator doorAnimator = trigger.transform.parent.Find("door").GetComponent<Animator>();
+                // check if no animation is already playing
+                if (doorAnimator.GetCurrentAnimatorStateInfo(0).IsName("door_idle"))
+                {
+                    doorAnimator.Play("door_open");
+                }
+            }
+
+            // check if no animation is already playing
+            if (triggerParent.tag == "doorWay2")
+            {
+                Animator doorAnimator = trigger.transform.parent.GetComponent<Animator>();
+                // check if no animation is already playing
+                if (doorAnimator.GetCurrentAnimatorStateInfo(0).IsName("door_idle_2"))
+                {
+                    doorAnimator.Play("door_open_2");
+                }
+            }
+
+            if (triggerParent.tag == "powerup")
+            {
+                speedPowerUp = true;
+                trigger.transform.parent.gameObject.SetActive(false);
+            }
+
+            if (triggerParent.tag == "projectile")
+            {
+                triggerParent.parent = transform.Find("ProjectilePoint").transform;
+                triggerParent.localPosition = Vector3.zero;
+            }
+        } 
+
+        private void ThrowProjectile()
+        {
+            Transform launchPoint = transform.Find("ProjectilePoint").transform;
+
+            float launchSpeed = 2f;
+            GameObject projectile = launchPoint.Find("ProjectileCube").gameObject; // this should be the projectile object
+
+            // change to opposite
+            projectile.transform.SetParent(null);
+
+            var rb = projectile.GetComponent<Rigidbody>();
+            var collider = projectile.transform.Find("ProjectileVisual").GetComponent<BoxCollider>();
+
+            rb.isKinematic = false;
+            rb.useGravity = true;
+            collider.isTrigger = false;
+
+            /*
+            rb.velocity = 0.1f * Vector3.Slerp(
+                projectile.transform.position, 
+                projectile.transform.Find("ArrivePoint").position,
+                0.5f
+            );
+            */
+
+            //projectile.Find("AttackRange").SetActive(true);
+        } 
     }
+
 }
