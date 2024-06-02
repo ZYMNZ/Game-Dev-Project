@@ -116,7 +116,9 @@ public class UIManager : MonoBehaviour
             SceneManager.LoadScene("TutorialScene 1");
         }
 
-        else if (currentSceneName == "Level1")
+        else if (currentSceneName == "Level1" 
+            || currentSceneName == "GameOverScene"
+        )
         {
             SceneManager.LoadScene("Level1");
         }
