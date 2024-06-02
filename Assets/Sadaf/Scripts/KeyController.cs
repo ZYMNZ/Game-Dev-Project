@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-
 public class KeyController : MonoBehaviour
 {
     private static int keyCount = 0;
-    public int totalKeys = 5;
+    public int totalKeys;
     public TMP_Text keyText;
     public Animator animator;
-
     public AudioManager manager;
     public GameObject victoryCanvas;
     public float victoryDuration = 5f;
@@ -18,11 +16,8 @@ public class KeyController : MonoBehaviour
 
     void Start()
     {
-        victoryCanvas.SetActive(false);
-
-        //manager = GetComponent<AudioManager>();
-
-
+        // Ensure everything is reset when the scene starts
+        ResetGame();
     }
 
     void Update()
@@ -38,8 +33,7 @@ public class KeyController : MonoBehaviour
             victoryCanvas.SetActive(true);
             victoryActivated = true;
 
-            // Deactivate victory canvas after specified duration
-            Invoke("DeactivateVictoryCanvas", victoryDuration);
+            Invoke("DisablePanel", victoryDuration);
         }
         keyText.text = "Keys: " + keyCount + "/" + totalKeys;
     }
@@ -49,8 +43,35 @@ public class KeyController : MonoBehaviour
         if (col.gameObject.tag == "Player" && keyCount < totalKeys)
         {
             keyCount++;
-            //manager.PlaySFx(manager.collectKey);
             gameObject.SetActive(false);
+            manager.PlaySFx(manager.collectKey);
+        }
+    }
+
+    void ResetGame()
+    {
+        // Reset key count
+        keyCount = 0;
+
+        // Reset victory panel
+        victoryCanvas.SetActive(false);
+        victoryActivated = false;
+
+        // Reinitialize animator
+        animator.Rebind();
+
+        // Reactivate enemies
+        ReactivateEnemies();
+
+        // Reset any other necessary components
+    }
+
+    void ReactivateEnemies()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            enemy.SetActive(true);
         }
     }
 
@@ -63,9 +84,9 @@ public class KeyController : MonoBehaviour
         }
     }
 
-    void DeactivateVictoryCanvas()
+    void DisablePanel()
     {
-        victoryCanvas.SetActive(false);
+        victoryCanvas?.SetActive(false);
     }
 
 }

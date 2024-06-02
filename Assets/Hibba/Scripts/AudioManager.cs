@@ -14,6 +14,11 @@ public class AudioManager : MonoBehaviour
     public AudioClip victory;
     public AudioClip collectKey;
 
+    public void PlaySFx(AudioClip clip)
+    {
+        SFXSource.PlayOneShot(clip);
+    }
+
     public void PlayMusic(AudioClip clip)
     {
         musicSource.clip = clip;
@@ -23,18 +28,25 @@ public class AudioManager : MonoBehaviour
     public void PlayMusicInLoop(AudioClip clip, bool loop)
     {
         musicSource.clip = clip;
-        musicSource.loop = loop; 
+        musicSource.loop = loop;
         musicSource.Play();
     }
+
 
     public void StopMusic()
     {
         musicSource.Stop();
     }
 
-    public void PlaySFx(AudioClip clip)
+    public void PauseMusic(AudioClip clip)
     {
-        SFXSource.clip = clip;
-        SFXSource.PlayOneShot(clip);
+        musicSource.Pause();
     }
+
+    public void ResumeMusic()
+    {
+        musicSource.UnPause();
+    }
+
+
 }

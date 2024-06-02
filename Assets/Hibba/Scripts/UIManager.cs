@@ -91,8 +91,13 @@ public class UIManager : MonoBehaviour
 
     public void ResumeGame()
     {
+        TutorialManager tutorialManager = FindObjectOfType<TutorialManager>();
+        if (tutorialManager != null)
+        {
+            tutorialManager.ResumeGame();
+        }
+
         SceneManager.UnloadSceneAsync("UIMenu");
-        Time.timeScale = 1;
     }
 
     public void MainMenu()
