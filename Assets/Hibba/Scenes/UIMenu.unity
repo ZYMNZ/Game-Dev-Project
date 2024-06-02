@@ -431,7 +431,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &186749934
@@ -2117,7 +2117,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1035191641
@@ -2725,9 +2725,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1553349777}
   SFXSource: {fileID: 687643827}
-  menu: {fileID: 8300000, guid: e5e0e1a0061d4214ba73128ddf1f5c50, type: 3}
+  menu: {fileID: 8300000, guid: 7fba53c9e43ee874e9db8980c62c2d11, type: 3}
   level1: {fileID: 8300000, guid: f2983715929bed442b9b2c8fc5342476, type: 3}
   click: {fileID: 8300000, guid: 8cfe1aa162f2e544e995d0d16a426185, type: 3}
+  victory: {fileID: 0}
+  collectKey: {fileID: 0}
 --- !u!1 &1444713357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2852,7 +2854,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1444713360
@@ -3121,7 +3123,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1515673324
