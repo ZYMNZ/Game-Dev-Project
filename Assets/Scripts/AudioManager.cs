@@ -7,12 +7,12 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource musicSource;
     public AudioSource SFXSource;
-
     public AudioClip menu;
     public AudioClip level1;
     public AudioClip click;
     public AudioClip victory;
     public AudioClip collectKey;
+    public AudioClip gameOver;
 
     public void PlaySFx(AudioClip clip)
     {

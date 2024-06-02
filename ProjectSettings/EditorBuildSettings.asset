@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Hibba/Scenes/Level1.unity
     guid: 9583c48d11cc16a4baf04bcfa5b73dcb
+  - enabled: 1
+    path: Assets/Logan/Scenes/GameOverScene.unity
+    guid: 9ecaf0345119c644ea0db7e0c337f930
   m_configObjects: {}

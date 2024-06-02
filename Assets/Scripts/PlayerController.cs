@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
 
 namespace Arsh.Scripts
 {
@@ -9,7 +11,7 @@ namespace Arsh.Scripts
     {
         public List<EnemyHealthBar> enemyHealthBars = new List<EnemyHealthBar>();
         public List<EnemyAIController> enemyControllers = new List<EnemyAIController>();
-       
+
         public int health;
         public Slider healthSlider;
 
@@ -82,9 +84,9 @@ namespace Arsh.Scripts
             horizontalVelocity.y = 0;
             if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
                 _rb.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * _rb.velocity.y;
-            
+
             LookAt();
-            
+
             _attackTrigger = false;
         }
 
@@ -117,7 +119,7 @@ namespace Arsh.Scripts
                 _rb.angularVelocity = Vector3.zero;
             }
         }
-        
+
         private Vector3 GetCameraForward(Camera playerCamera)
         {
             Vector3 forward = playerCamera.transform.forward;
@@ -142,20 +144,20 @@ namespace Arsh.Scripts
             Ray ray = new Ray(transform.position + Vector3.up * 0.25f, Vector3.down);
             return Physics.Raycast(ray, out RaycastHit hit, 0.3f);
         }
-        
+
         private void Attack(InputAction.CallbackContext obj)
         {
             _wandCollider.enabled = true;
             _attackTrigger = true;
             _animator.SetTrigger("attack");
-            
-             // Apply damage to enemies within range
+
+            // Apply damage to enemies within range
             foreach (EnemyHealthBar enemyHealthBar in enemyHealthBars)
             {
                 if (Vector3.Distance(transform.position, enemyHealthBar.transform.position) < 5f)
                 {
                     enemyHealthBar.TakeDamage(35);
-                    
+
                 }
             }
 
@@ -174,8 +176,8 @@ namespace Arsh.Scripts
             Invoke("DisableWandCollider", 0.1f);
             */
         }
-        
-        
+
+
         private void DisableWandCollider()
         {
             _wandCollider.enabled = false;
@@ -187,10 +189,14 @@ namespace Arsh.Scripts
             healthSlider.value = health;
             Debug.Log(healthSlider.value);
             Canvas.ForceUpdateCanvases();
-            // if (health <= 0)
-            // {
-            //     //end game?
-            // }
+            if (health <= 0)
+            {
+                string currentSceneName = SceneManager.GetActiveScene().name;
+                PlayerPrefs.SetString("LastScene", currentSceneName);
+                PlayerPrefs.Save();
+
+                SceneManager.LoadScene("GameOverScene", LoadSceneMode.Single);
+            }
         }
 
         private void PowerUp_Speed()
@@ -204,8 +210,8 @@ namespace Arsh.Scripts
 
                 transform.Find("Particles")?.gameObject.SetActive(true);
             }
-            
-            if(speedCount == 250)
+
+            if (speedCount == 250)
             {
                 speedPowerUp = false; // reset the speed to normal
                 speedCount = 0;
@@ -221,7 +227,13 @@ namespace Arsh.Scripts
         private void OnTriggerEnter(Collider trigger)
         {
             var triggerParent = trigger.transform.parent;
+
+            if (triggerParent.tag == null)
+            {
+                return; // Do nothing
+            }
             //Debug.Log(trigger.gameObject.name);
+
             if (triggerParent.tag == "doorWay1")
             {
                 Animator doorAnimator = trigger.transform.parent.Find("door").GetComponent<Animator>();
@@ -254,7 +266,7 @@ namespace Arsh.Scripts
                 triggerParent.parent = transform.Find("ProjectilePoint").transform;
                 triggerParent.localPosition = Vector3.zero;
             }
-        } 
+        }
 
         private void ThrowProjectile()
         {
@@ -282,7 +294,7 @@ namespace Arsh.Scripts
             */
 
             //projectile.Find("AttackRange").SetActive(true);
-        } 
+        }
     }
 
 }

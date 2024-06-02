@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -217,7 +217,7 @@ RectTransform:
   m_Children:
   - {fileID: 1020043330}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -308,8 +308,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9151240834798732533, guid: d1420f0356594684e9a213ffb515f671, type: 3}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+      - m_Target: {fileID: 203444691}
+        m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 203444690}
   - component: {fileID: 203444689}
   - component: {fileID: 203444688}
+  - component: {fileID: 203444691}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -442,6 +443,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203444691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203444687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd73e81b27d9be45b2be21c241906ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayAgainButton: {fileID: 1861268341}
+  MainMenuButton: {fileID: 153122583}
+  audioManager: {fileID: 886005261}
 --- !u!1 &266274802
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,10 +516,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Over
+  m_text: GAME OVER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7604d1286ab24ef4793efedb04d95c86, type: 2}
+  m_sharedMaterial: {fileID: -440589748128044459, guid: 7604d1286ab24ef4793efedb04d95c86, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -527,8 +543,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -577,6 +593,98 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266274802}
   m_CullTransparentMesh: 1
+--- !u!1001 &886005257
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2728403664401274390, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728403664401274390, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 947.6593
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728403664401274390, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 779.9698
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728403664401274390, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.320541
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728403664401274390, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728403664401274390, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728403664401274390, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728403664401274390, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728403664401274390, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728403664401274390, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728403664401274390, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728403664401274394, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+--- !u!1 &886005258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2728403664401274394, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+  m_PrefabInstance: {fileID: 886005257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &886005259 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2728403663783982333, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+  m_PrefabInstance: {fileID: 886005257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &886005260 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2728403664524629215, guid: e0ac55c0a9e144f4fbdf43d860a3e030, type: 3}
+  m_PrefabInstance: {fileID: 886005257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &886005261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886005258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 036ff9f87e1ac824ba9132f69ccf1728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 886005260}
+  SFXSource: {fileID: 886005259}
+  menu: {fileID: 8300000, guid: 7fba53c9e43ee874e9db8980c62c2d11, type: 3}
+  level1: {fileID: 8300000, guid: f2983715929bed442b9b2c8fc5342476, type: 3}
+  click: {fileID: 8300000, guid: 8cfe1aa162f2e544e995d0d16a426185, type: 3}
+  victory: {fileID: 8300000, guid: fba10cef9bf4dd24bb5ee2fc661f6921, type: 3}
+  collectKey: {fileID: 8300000, guid: dea180a0f8107e5479850dc641273c84, type: 3}
+  gameOver: {fileID: 8300000, guid: 860ba9a664cd37c43869ea5b687d1cb7, type: 3}
 --- !u!1 &1020043329
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +854,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1509361454
 GameObject:
@@ -806,12 +914,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Main Menu
+  m_text: 'MAIN MENU
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3e18782afbe7d75438485959a879a58e, type: 2}
+  m_sharedMaterial: {fileID: -6375751861621968452, guid: 3e18782afbe7d75438485959a879a58e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1022,10 +1130,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play Again
+  m_text: PLAY AGAIN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3e18782afbe7d75438485959a879a58e, type: 2}
+  m_sharedMaterial: {fileID: -6375751861621968452, guid: 3e18782afbe7d75438485959a879a58e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1183,8 +1291,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9151240834798732533, guid: d1420f0356594684e9a213ffb515f671, type: 3}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+      - m_Target: {fileID: 203444691}
+        m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
         m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
@@ -1299,5 +1407,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
