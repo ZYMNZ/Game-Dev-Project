@@ -37,6 +37,10 @@ namespace Arsh.Scripts
         public GameObject wand;
         private Collider _wandCollider;
 
+        // Projectile Logic
+        private GameObject projectile = null;
+        public static bool projectileMovement = false;
+
         public bool AttackTrigger
         {
             get => _attackTrigger;
@@ -62,6 +66,16 @@ namespace Arsh.Scripts
             if (Input.GetKeyUp(KeyCode.I) && transform.Find("ProjectilePoint").transform.childCount != 0) // if there is a projectile picked up
             {
                 ThrowProjectile();
+            }
+
+            var closestEnemy = ClosestEnemy();
+            if (projectileMovement && closestEnemy != null && projectile != null)
+            {
+                projectile.transform.position = Vector3.Slerp(
+                    projectile.transform.position, // start
+                    closestEnemy.transform.position, // end
+                    0.09f // interpolation 
+                );
             }
         }
 
@@ -187,7 +201,7 @@ namespace Arsh.Scripts
         {
             health -= damage;
             healthSlider.value = health;
-            Debug.Log(healthSlider.value);
+            //Debug.Log(healthSlider.value);
             Canvas.ForceUpdateCanvases();
             if (health <= 0)
             {
@@ -228,73 +242,87 @@ namespace Arsh.Scripts
         {
             var triggerParent = trigger.transform.parent;
 
-            if (triggerParent.tag == null)
+            if (triggerParent != null && triggerParent.tag != null)
             {
-                return; // Do nothing
-            }
-            //Debug.Log(trigger.gameObject.name);
-
-            if (triggerParent.tag == "doorWay1")
-            {
-                Animator doorAnimator = trigger.transform.parent.Find("door").GetComponent<Animator>();
-                // check if no animation is already playing
-                if (doorAnimator.GetCurrentAnimatorStateInfo(0).IsName("door_idle"))
+                //Debug.Log(trigger.gameObject.name);
+                if (triggerParent.tag == "doorWay1")
                 {
-                    doorAnimator.Play("door_open");
+                    Animator doorAnimator = trigger.transform.parent.Find("door").GetComponent<Animator>();
+                    // check if no animation is already playing
+                    if (doorAnimator.GetCurrentAnimatorStateInfo(0).IsName("door_idle"))
+                    {
+                        doorAnimator.Play("door_open");
+                    }
                 }
-            }
 
-            // check if no animation is already playing
-            if (triggerParent.tag == "doorWay2")
-            {
-                Animator doorAnimator = trigger.transform.parent.GetComponent<Animator>();
                 // check if no animation is already playing
-                if (doorAnimator.GetCurrentAnimatorStateInfo(0).IsName("door_idle_2"))
+                if (triggerParent.tag == "doorWay2")
                 {
-                    doorAnimator.Play("door_open_2");
+                    Animator doorAnimator = trigger.transform.parent.GetComponent<Animator>();
+                    // check if no animation is already playing
+                    if (doorAnimator.GetCurrentAnimatorStateInfo(0).IsName("door_idle_2"))
+                    {
+                        doorAnimator.Play("door_open_2");
+                    }
                 }
-            }
 
-            if (triggerParent.tag == "powerup")
-            {
-                speedPowerUp = true;
-                trigger.transform.parent.gameObject.SetActive(false);
-            }
+                if (triggerParent.tag == "powerup")
+                {
+                    speedPowerUp = true;
+                    trigger.transform.parent.gameObject.SetActive(false);
+                }
 
-            if (triggerParent.tag == "projectile")
-            {
-                triggerParent.parent = transform.Find("ProjectilePoint").transform;
-                triggerParent.localPosition = Vector3.zero;
+                if (triggerParent.tag == "projectile")
+                {
+                    triggerParent.parent = transform.Find("ProjectilePoint").transform;
+                    triggerParent.localPosition = Vector3.zero;
+                    projectile = triggerParent.gameObject;
+                        projectile.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+                }
             }
         }
 
         private void ThrowProjectile()
         {
             Transform launchPoint = transform.Find("ProjectilePoint").transform;
+            GameObject closestEnemy = ClosestEnemy();
 
-            float launchSpeed = 2f;
-            GameObject projectile = launchPoint.Find("ProjectileCube").gameObject; // this should be the projectile object
+            if (closestEnemy != null && projectile != null)
+            {
+                projectile.transform.SetParent(null);
 
-            // change to opposite
-            projectile.transform.SetParent(null);
+                var projectileRb = projectile.GetComponent<Rigidbody>();
+                var collider = projectile.transform.Find("ProjectileVisual").GetComponent<BoxCollider>();
 
-            var rb = projectile.GetComponent<Rigidbody>();
-            var collider = projectile.transform.Find("ProjectileVisual").GetComponent<BoxCollider>();
-
-            rb.isKinematic = false;
-            rb.useGravity = true;
-            collider.isTrigger = false;
-
-            /*
-            rb.velocity = 0.1f * Vector3.Slerp(
-                projectile.transform.position, 
-                projectile.transform.Find("ArrivePoint").position,
-                0.5f
-            );
-            */
+                projectileRb.isKinematic = false;
+                projectileRb.useGravity = true;
+                collider.isTrigger = false;
+                projectileMovement = true;
+                projectile = null;
+            }
 
             //projectile.Find("AttackRange").SetActive(true);
         }
-    }
+        public GameObject ClosestEnemy()
+        {
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+            GameObject closestEnemy = null;
+            float smallestDistance = Mathf.Infinity;
 
+            Vector3 currentPosition = transform.position;
+            foreach (GameObject enemy in enemies)
+            {
+                float distance = Vector3.Distance(currentPosition, enemy.transform.position);
+
+                if (distance < smallestDistance)
+                {
+                    closestEnemy = enemy;
+                    smallestDistance = distance;
+                }
+            }
+
+            // the closest enemy should not be too close nor too far
+            return smallestDistance >= 20 && smallestDistance <= 60 ? closestEnemy : null;
+        }
+    }
 }
