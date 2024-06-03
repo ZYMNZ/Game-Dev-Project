@@ -315,6 +315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 8498622565229973273, guid: 0de72daba9f3e7041858192b5941da6e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 716649077}
     - target: {fileID: 8498622565229973275, guid: 0de72daba9f3e7041858192b5941da6e, type: 3}
       propertyPath: far clip plane
       value: 300
