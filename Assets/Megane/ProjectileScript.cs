@@ -19,7 +19,7 @@ public class ProjectileScript : MonoBehaviour
 
             enemyHealth = otherCollider.gameObject.GetComponent<EnemyHealthBar>();
             gameObject.SetActive(false);
-            enemyHealth.TakeDamage(50);
+            enemyHealth.TakeDamage(20);
             Debug.Log(enemyHealth.HP);
         }
     }

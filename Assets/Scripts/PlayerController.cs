@@ -225,7 +225,7 @@ namespace Arsh.Scripts
                 transform.Find("Particles")?.gameObject.SetActive(true);
             }
 
-            if (speedCount == 250)
+            if (speedCount == 200)
             {
                 speedPowerUp = false; // reset the speed to normal
                 speedCount = 0;

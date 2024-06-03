@@ -7,7 +7,7 @@ using Arsh.Scripts;
 
 public class EnemyAIController : MonoBehaviour
 {
-    public PlayerController playerController;
+    private PlayerController playerController;
     public float health;
     public Slider healthSlider;
 
@@ -21,8 +21,6 @@ public class EnemyAIController : MonoBehaviour
     private void Update()
     {
         healthSlider.value = health;
-
-
     }
     //when enemy attacks
     private void OnTriggerEnter(Collider other)
@@ -30,7 +28,7 @@ public class EnemyAIController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Reduce player's health
-            playerController.TakeDamage(5);
+            other.gameObject.GetComponent<PlayerController>().TakeDamage(5);
             //playerController.healthSlider.value = PlayerController.health;
         }
         /*
