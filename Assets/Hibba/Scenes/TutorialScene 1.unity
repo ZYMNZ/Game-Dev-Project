@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1329,7 +1329,10 @@ PrefabInstance:
 
         Space Key = jump
 
-        Left Mouse = attack'
+        Left Mouse = attack
+
+        F
+        = Throw Projectile'
       objectReference: {fileID: 0}
     - target: {fileID: 8329600953083839769, guid: 25906ea4f11538b4cb060d39f8257376, type: 3}
       propertyPath: m_AnchoredPosition.x
