@@ -218,7 +218,7 @@ namespace Arsh.Scripts
             if (speedPowerUp)
             {
                 if (maxSpeed <= 5) // if the speed has not been applied yet
-                    maxSpeed = 75;
+                    maxSpeed = 50;
                 else
                     speedCount++;
 
@@ -322,7 +322,7 @@ namespace Arsh.Scripts
             }
 
             // the closest enemy should not be too close nor too far
-            return smallestDistance >= 20 && smallestDistance <= 60 ? closestEnemy : null;
+            return smallestDistance >= 10 && smallestDistance <= 60 ? closestEnemy : null;
         }
     }
 }
