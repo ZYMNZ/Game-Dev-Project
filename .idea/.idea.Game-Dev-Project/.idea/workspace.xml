@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09354c92-f6ca-4781-91e6-2c240f5f89f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game-Dev-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game-Dev-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hibba/Scenes/TutorialScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hibba/Scenes/TutorialScene 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-    </list>
+    <list default="true" id="09354c92-f6ca-4781-91e6-2c240f5f89f1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +99,7 @@
       <workItem from="1717209845215" duration="2819000" />
       <workItem from="1717282848350" duration="1559000" />
       <workItem from="1717289701764" duration="1288000" />
-      <workItem from="1717382540537" duration="1003000" />
+      <workItem from="1717382540537" duration="1363000" />
     </task>
     <task id="LOCAL-00001" summary="Updated attack key to left click">
       <option name="closed" value="true" />
