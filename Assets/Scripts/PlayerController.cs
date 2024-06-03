@@ -63,7 +63,7 @@ namespace Arsh.Scripts
             PowerUp_Speed();
 
             // refractor later
-            if (Input.GetKeyUp(KeyCode.I) && transform.Find("ProjectilePoint").transform.childCount != 0) // if there is a projectile picked up
+            if (Input.GetKeyUp(KeyCode.F) && transform.Find("ProjectilePoint").transform.childCount != 0) // if there is a projectile picked up
             {
                 ThrowProjectile();
             }

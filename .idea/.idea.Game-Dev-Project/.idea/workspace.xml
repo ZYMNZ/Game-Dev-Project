@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09354c92-f6ca-4781-91e6-2c240f5f89f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Game-Dev-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game-Dev-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arsh/Animations/Attack.mask" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arsh/Animations/Attack.mask" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arsh/Hibba/Scenes/TutorialScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arsh/Hibba/Scenes/TutorialScene 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arsh/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arsh/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arsh/InputManager.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arsh/InputManager.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Hibba/Scenes/TutorialScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hibba/Scenes/TutorialScene 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +102,7 @@
       <workItem from="1717209845215" duration="2819000" />
       <workItem from="1717282848350" duration="1559000" />
       <workItem from="1717289701764" duration="1288000" />
+      <workItem from="1717382540537" duration="166000" />
     </task>
     <task id="LOCAL-00001" summary="Updated attack key to left click">
       <option name="closed" value="true" />
