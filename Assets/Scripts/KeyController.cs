@@ -42,9 +42,12 @@ public class KeyController : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Player" && keyCount < totalKeys)
+        if (col.gameObject.tag == "Player" && keyCount <= totalKeys)
         {
             keyCount++;
+            Debug.Log(keyCount);
+            Debug.Log("-----");
+            Debug.Log(totalKeys);
             gameObject.SetActive(false);
             manager.PlaySFx(manager.collectKey);
         }

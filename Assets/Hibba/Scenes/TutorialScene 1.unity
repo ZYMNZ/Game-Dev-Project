@@ -320,6 +320,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 716649077}
     - target: {fileID: 8498622565229973275, guid: 0de72daba9f3e7041858192b5941da6e, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498622565229973275, guid: 0de72daba9f3e7041858192b5941da6e, type: 3}
       propertyPath: far clip plane
       value: 300
       objectReference: {fileID: 0}
